@@ -20,7 +20,6 @@ format:
       - brand
     css: styles.css
     toc: true
-    pagetitle: "Replicards | {{< meta title >}}"
 
 execute: 
   freeze: auto
