@@ -16,7 +16,7 @@ Access the webpage presentation here: https://replicards.netlify.app/replicards.
 ### Using *conda*
 
 ``` bash
-conda install erilllab::markov_dna
+conda install eliamascolo::replicards
 ```
 
 ## User guide
