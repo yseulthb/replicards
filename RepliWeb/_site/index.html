@@ -247,7 +247,7 @@ window.Quarto = {
   gtag('config', 'G-3HLZHZMB0V');
 </script>
 <center>
-Concept by Elia Mascolo* and Yseult Héjja-Brichard
+Concept by <a href="https://eliamascolo.github.io/">Elia Mascolo</a> and <a href="https://yseulthb.github.io/">Yseult Héjja-Brichard</a>
 </center>
 <center>
 ✉️ eliamascolo94@gmail.com
@@ -361,7 +361,7 @@ Concept by Elia Mascolo* and Yseult Héjja-Brichard
 </tbody>
 </table>
 <p>We can also visualize the number of <strong>A</strong>, <strong>B</strong> and <strong>C</strong> over generations through a line plot as follows.</p>
-<div id="c5595eb7" class="cell" data-execution_count="1">
+<div id="d905db0a" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>plt.rcParams[<span class="st">'figure.figsize'</span>] <span class="op">=</span> [<span class="dv">5</span>, <span class="fl">2.5</span>]</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>plt.plot([<span class="dv">8</span>, <span class="dv">16</span>, <span class="dv">21</span>], label<span class="op">=</span><span class="st">'A'</span>)</span>
@@ -504,7 +504,7 @@ Concept by Elia Mascolo* and Yseult Héjja-Brichard
 <li><code>create</code> : a function that can be used to generate the initial population. It requires to specify three parameters: (1) the type of organism, i.e., whatever name that identifies that type; (2) the (expected) reproductive success of that type of organism; (3) the number of organisms of that type that must be created.</li>
 </ul>
 <p>The code is imported as follows.</p>
-<div id="ac6cfb1d" class="cell" data-execution_count="2">
+<div id="1ba2b723" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> random</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> evo_sim_objects <span class="im">import</span> Population, create</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -513,13 +513,13 @@ Concept by Elia Mascolo* and Yseult Héjja-Brichard
 <h3 class="anchored" data-anchor-id="settings">Settings</h3>
 <p>We can now set the initial condition (the population at “Generation 0”) for our evolutionary simulation.</p>
 <p>First, we set how many “organisms” per type are present at the beginning. Here we simulate the in-class experiment by setting three patterns, 8 copies each, for a total population size of <span class="math inline">\(N=24\)</span>.</p>
-<div id="6eb5f665" class="cell" data-execution_count="3">
+<div id="87c4d273" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>n_a <span class="op">=</span> <span class="dv">8</span>  <span class="co"># Initial number of A</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>n_b <span class="op">=</span> <span class="dv">8</span>  <span class="co"># Initial number of B</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>n_c <span class="op">=</span> <span class="dv">8</span>  <span class="co"># Initial number of C</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Next, we can decide how easy it will be to replicate each type of pattern, by setting the expected (average) number of copies each pattern get at each generation.</p>
-<div id="8f1d4bff" class="cell" data-execution_count="4">
+<div id="7ae84221" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>w_a <span class="op">=</span> <span class="dv">12</span>  <span class="co"># Expected number of offspring for A per generation</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>w_b <span class="op">=</span>  <span class="dv">8</span>  <span class="co"># Expected number of offspring for B per generation</span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>w_c <span class="op">=</span>  <span class="dv">4</span>  <span class="co"># Expected number of offspring for C per generation</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -528,7 +528,7 @@ Concept by Elia Mascolo* and Yseult Héjja-Brichard
 <section id="run-the-evolutionary-simulation" class="level3">
 <h3 class="anchored" data-anchor-id="run-the-evolutionary-simulation">Run the evolutionary simulation</h3>
 <p>We are now ready to run a computer simulation.</p>
-<div id="ef2f2109" class="cell" data-execution_count="5">
+<div id="20e586ce" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> random</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> evo_sim_objects <span class="im">import</span> Population, create</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -715,7 +715,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/replicards\.netlify\.app");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }

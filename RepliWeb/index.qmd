@@ -12,7 +12,7 @@ jupyter: python3
   gtag('config', 'G-3HLZHZMB0V');
 </script>
 
-<center> Concept by Elia Mascolo* and Yseult Héjja-Brichard </center>
+<center> Concept by [Elia Mascolo](https://eliamascolo.github.io/) and [Yseult Héjja-Brichard](https://yseulthb.github.io/) </center>
 <center> ✉️ eliamascolo94@gmail.com </center>
 
 
