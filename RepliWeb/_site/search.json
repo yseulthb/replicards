@@ -193,7 +193,7 @@
     "href": "index.html#materials-and-methods",
     "title": "\nThe Replicards\n",
     "section": "Materials and Methods",
-    "text": "Materials and Methods\n\nReplicards\nThe replicards were \\(7 \\times 7\\) square grids (of size 7 cm \\(\\times\\) 7 cm), printed on thick paper. The X marks on the cells were drawn by the students using pencils.\n\n\nSimulations\nThe code was written in Python and is available at XXX.\nReplicard package: https://anaconda.org/eliamascolo/replicards"
+    "text": "Materials and Methods\n\nReplicards\nThe replicards were \\(7 \\times 7\\) square grids (of size 7 cm \\(\\times\\) 7 cm), printed on thick paper. The X marks on the cells were drawn by the students using pencils.\n\n\nSimulations\nThe code was written in Python and is available at XXX.\nReplicards package: https://anaconda.org/eliamascolo/replicards"
   },
   {
     "objectID": "index.html#acknowledgements",
