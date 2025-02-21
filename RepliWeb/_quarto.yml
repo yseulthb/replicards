@@ -1,0 +1,27 @@
+project:
+  type: website
+
+website:
+  title: "Replicards"
+  favicon: logo-icon.png
+  google-analytics: "G-3HLZHZMB0V"
+  back-to-top-navigation: true
+  page-footer: "*Original idea: Elia Mascolo & Yseult Héjja-Brichard*" 
+  navbar:
+    logo: logo.svg
+    left:
+      - href: index.qmd
+      
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    toc: true
+
+execute: 
+  freeze: auto
+
+  
