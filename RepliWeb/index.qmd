@@ -13,7 +13,7 @@ jupyter: python3
 </script>
 
 <center> Concept by [Elia Mascolo](https://eliamascolo.github.io/) and [Yseult Héjja-Brichard](https://yseulthb.github.io/) </center>
-<center> ✉️ eliamascolo94@gmail.com </center>
+<center> ✉️ [eliamascolo94@gmail.com](mailto:eliamascolo94@gmail.com) </center>
 
 
 <br />
