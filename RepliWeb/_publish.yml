@@ -1,0 +1,4 @@
+- source: project
+  netlify:
+    - id: c213ba91-1ee3-4a87-ac8c-e46dac93645b
+      url: https://replicards.netlify.app
