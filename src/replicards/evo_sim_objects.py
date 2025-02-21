@@ -22,6 +22,7 @@ class Organism:
             offspring.append(copy.deepcopy(self))
         return offspring
 
+
 class Population:
     
     def __init__(self, org_list):
@@ -79,48 +80,7 @@ class Population:
         self._update_counts()
 
 
-
 def create(org_name, fitness, n):
     ''' Creates `n` organisms with name `org_name` and specified `fitness`. '''
     return [Organism(org_name, fitness) for i in range(n)]
-
-
-
-# # Initialize population
-# pop = Population(create('A', 5, 8) +
-#                  create('B', 4, 8) +
-#                  create('C', 3, 8))
-
-# # Population size
-# N = pop.size
-
-# # Keep evolving until fixation is reached
-# while not pop.fixation:
-    
-#     # Reproduction based on fitness
-#     pop_offspring = []
-#     for org in pop.organisms:
-#         pop_offspring += org.reproduce()
-#     parents_and_offspring = pop.organisms + pop_offspring
-    
-#     # Maintain population size constant at N, the environment's carrying capacity
-#     new_pop = random.sample(parents_and_offspring, N)
-    
-#     # Update the population
-#     pop.update(new_pop)
-
-# # Plot results of the evolutionary simulation
-# pop.plot_evolution()
-
-
-
-
-
-
-
-
-
-
-
-
 
