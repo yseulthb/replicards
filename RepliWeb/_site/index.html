@@ -257,13 +257,9 @@ Concept by <a href="https://eliamascolo.github.io/">Elia Mascolo</a> and <a href
 <section id="protocol" class="level2">
 <h2 class="anchored" data-anchor-id="protocol">Protocol</h2>
 <p>Each student was provided with a deck of square cards showing an empty <span class="math inline">\(8 \times 8\)</span> grid. This deck of cards was available to the students for the whole duration of the class.</p>
-<!-- <div id=newfig>
-    <img src="images/test_image.jpg" alt="grid" width="200"/>
-    <figcaption> Fig. 1 - This is the image caption. </figcaption>
-</div> -->
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/test_image.jpg" class="img-fluid figure-img" style="width:80.0%"></p>
+<p><img src="images/test_image.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
 <figcaption>Fig. 1 - This is the image caption.</figcaption>
 </figure>
 </div>
@@ -273,14 +269,9 @@ Concept by <a href="https://eliamascolo.github.io/">Elia Mascolo</a> and <a href
 <section id="the-memorization-phase-10-seconds" class="level4">
 <h4 class="anchored" data-anchor-id="the-memorization-phase-10-seconds">1. The memorization phase (<span class="math inline">\(10\)</span> seconds)</h4>
 <p>Each student was provided with a <em>template</em> card, on which some cells of the grid were crossed with an <strong>X</strong>, forming a pattern. For example, a pattern may look like this:</p>
-<!-- <div id=newfig>
-    <img src="images/test_image.jpg" alt="grid" width="200"/>
-    <figcaption> Fig. 2 - This is the image caption. </figcaption>
-</div>
-<br /> -->
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/test_image.jpg" class="img-fluid figure-img" style="width:80.0%"></p>
+<p><img src="images/test_image.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
 <figcaption>Fig. 2 - This is the image caption.</figcaption>
 </figure>
 </div>
@@ -290,13 +281,9 @@ Concept by <a href="https://eliamascolo.github.io/">Elia Mascolo</a> and <a href
 <section id="the-replication-phase-30-seconds" class="level4">
 <h4 class="anchored" data-anchor-id="the-replication-phase-30-seconds">2. The replication phase (<span class="math inline">\(30\)</span> seconds)</h4>
 <p>As soon as they had turned the template face down, they had to copy the observed pattern onto the empty cards they were provided (without being able to look at the template again). They were asked to try to create as many correct copies of the template as possible over <span class="math inline">\(30\)</span> seconds. They were told that translations or rotations of the pattern on the grid count as correct replicas. For example, the following three cards display the <em>same</em> pattern.</p>
-<!-- <div id=newfig>
-    <img src="images/test_image.jpg" alt="grid" width="200"/>
-    <figcaption> Fig. 3 - This is the image caption. </figcaption>
-</div> -->
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/test_image.jpg" class="img-fluid figure-img" style="width:80.0%"></p>
+<p><img src="images/test_image.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
 <figcaption>Fig. 3 - This is the image caption.</figcaption>
 </figure>
 </div>
@@ -317,14 +304,9 @@ Concept by <a href="https://eliamascolo.github.io/">Elia Mascolo</a> and <a href
 <section id="results" class="level2">
 <h2 class="anchored" data-anchor-id="results">Results</h2>
 <p>The class was composed of <span class="math inline">\(24\)</span> students (<span class="math inline">\(N=24\)</span>). At generation 0, the “population” of <em>template</em> cards that had been distributed to the students was composed of the following three patterns (8 copies each):</p>
-<!-- <div id=newfig>
-    <img src="images/test_image.jpg" alt="grid" width="200"/>
-    <figcaption> Fig. 4 - This is the image caption. </figcaption>
-</div>
-<br /> -->
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/test_image.jpg" class="img-fluid figure-img" style="width:80.0%"></p>
+<p><img src="images/test_image.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
 <figcaption>Fig. 4 - This is the image caption.</figcaption>
 </figure>
 </div>
@@ -361,7 +343,7 @@ Concept by <a href="https://eliamascolo.github.io/">Elia Mascolo</a> and <a href
 </tbody>
 </table>
 <p>We can also visualize the number of <strong>A</strong>, <strong>B</strong> and <strong>C</strong> over generations through a line plot as follows.</p>
-<div id="9a7f4a79" class="cell" data-execution_count="1">
+<div id="a43ac523" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>plt.rcParams[<span class="st">'figure.figsize'</span>] <span class="op">=</span> [<span class="dv">5</span>, <span class="fl">2.5</span>]</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>plt.plot([<span class="dv">8</span>, <span class="dv">16</span>, <span class="dv">21</span>], label<span class="op">=</span><span class="st">'A'</span>)</span>
@@ -405,26 +387,16 @@ Concept by <a href="https://eliamascolo.github.io/">Elia Mascolo</a> and <a href
 <section id="mutants" class="level4">
 <h4 class="anchored" data-anchor-id="mutants">Mutants</h4>
 <p>Mutants at generation <span class="math inline">\(1\)</span>:</p>
-<!-- <div id=newfig>
-    <img src="images/test_image.jpg" alt="grid" width="200"/>
-    <figcaption> Fig. 5 - This is the image caption. </figcaption>
-</div>
-<br /> -->
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/test_image.jpg" class="img-fluid figure-img" style="width:80.0%"></p>
+<p><img src="images/test_image.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
 <figcaption>Fig. 5 - This is the image caption.</figcaption>
 </figure>
 </div>
 <p>Mutants at generation <span class="math inline">\(2\)</span>:</p>
-<!-- <div id=newfig>
-    <img src="images/test_image.jpg" alt="grid" width="200"/>
-    <figcaption> Fig. 6 - This is the image caption. </figcaption>
-</div>
-<br /> -->
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/test_image.jpg" class="img-fluid figure-img" style="width:80.0%"></p>
+<p><img src="images/test_image.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
 <figcaption>Fig. 6 - This is the image caption.</figcaption>
 </figure>
 </div>
@@ -504,7 +476,7 @@ Concept by <a href="https://eliamascolo.github.io/">Elia Mascolo</a> and <a href
 <li><code>create</code> : a function that can be used to generate the initial population. It requires to specify three parameters: (1) the type of organism, i.e., whatever name that identifies that type; (2) the (expected) reproductive success of that type of organism; (3) the number of organisms of that type that must be created.</li>
 </ul>
 <p>The code is imported as follows.</p>
-<div id="f5a91ee7" class="cell" data-execution_count="2">
+<div id="9e5adff5" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> random</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> evo_sim_objects <span class="im">import</span> Population, create</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -513,13 +485,13 @@ Concept by <a href="https://eliamascolo.github.io/">Elia Mascolo</a> and <a href
 <h3 class="anchored" data-anchor-id="settings">Settings</h3>
 <p>We can now set the initial condition (the population at “Generation 0”) for our evolutionary simulation.</p>
 <p>First, we set how many “organisms” per type are present at the beginning. Here we simulate the in-class experiment by setting three patterns, 8 copies each, for a total population size of <span class="math inline">\(N=24\)</span>.</p>
-<div id="6937e933" class="cell" data-execution_count="3">
+<div id="9732c4c6" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>n_a <span class="op">=</span> <span class="dv">8</span>  <span class="co"># Initial number of A</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>n_b <span class="op">=</span> <span class="dv">8</span>  <span class="co"># Initial number of B</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>n_c <span class="op">=</span> <span class="dv">8</span>  <span class="co"># Initial number of C</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Next, we can decide how easy it will be to replicate each type of pattern, by setting the expected (average) number of copies each pattern get at each generation.</p>
-<div id="360f6e23" class="cell" data-execution_count="4">
+<div id="26e8f0ae" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>w_a <span class="op">=</span> <span class="dv">12</span>  <span class="co"># Expected number of offspring for A per generation</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>w_b <span class="op">=</span>  <span class="dv">8</span>  <span class="co"># Expected number of offspring for B per generation</span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>w_c <span class="op">=</span>  <span class="dv">4</span>  <span class="co"># Expected number of offspring for C per generation</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -528,7 +500,7 @@ Concept by <a href="https://eliamascolo.github.io/">Elia Mascolo</a> and <a href
 <section id="run-the-evolutionary-simulation" class="level3">
 <h3 class="anchored" data-anchor-id="run-the-evolutionary-simulation">Run the evolutionary simulation</h3>
 <p>We are now ready to run a computer simulation.</p>
-<div id="3b2ea9a4" class="cell" data-execution_count="5">
+<div id="5433f983" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> random</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> evo_sim_objects <span class="im">import</span> Population, create</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -573,7 +545,8 @@ Concept by <a href="https://eliamascolo.github.io/">Elia Mascolo</a> and <a href
 </section>
 <section id="run-your-own-experiments" class="level3">
 <h3 class="anchored" data-anchor-id="run-your-own-experiments">Run your own experiments</h3>
-<p>If you are running this as a Jupyter Notebook, you can go back to the <a href="#Settings">Settings</a> and change the parameters that specify the initial conditions. In particular, if you have thought about the <a href="#Homework-questions">Homework questions</a>, it is time for you to put your thoughts to the test! For example, to get the answer to <strong>Question 1</strong>, you can change the population size to make it very big or very small, and run the simulation several times to see if results become more consistent or more unpredictable. Similarly, for <strong>Question 2</strong> you can play with the <code>w_a</code>, <code>w_b</code> and <code>w_c</code> parameters, which control the reproductive success (the “fitness”) of each type. You can make it more unequal (for example, 12, 2, 1) or more similar to each other (for example, 12, 11, 10).</p>
+<p>If you are running this as a Jupyter Notebook*, you can go back to the <a href="#Settings">Settings</a> and change the parameters that specify the initial conditions. In particular, if you have thought about the <a href="#Homework-questions">Homework questions</a>, it is time for you to put your thoughts to the test! For example, to get the answer to <strong>Question 1</strong>, you can change the population size to make it very big or very small, and run the simulation several times to see if results become more consistent or more unpredictable. Similarly, for <strong>Question 2</strong> you can play with the <code>w_a</code>, <code>w_b</code> and <code>w_c</code> parameters, which control the reproductive success (the “fitness”) of each type. You can make it more unequal (for example, 12, 2, 1) or more similar to each other (for example, 12, 11, 10).</p>
+<p><em>The Jupyter Notebook can be downloaded <a href="https://github.com/eliamascolo/replicards/blob/main/src/replicards/replicards.ipynb">here</a>.</em></p>
 <hr>
 </section>
 </section>

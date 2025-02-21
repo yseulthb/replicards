@@ -28,12 +28,7 @@ The aim of this interactive class is to demonstrate how replicants that can inhe
 
 Each student was provided with a deck of square cards showing an empty $8 \times 8$ grid. This deck of cards was available to the students for the whole duration of the class.
 
-<!-- <div id=newfig>
-    <img src="images/test_image.jpg" alt="grid" width="200"/>
-    <figcaption> Fig. 1 - This is the image caption. </figcaption>
-</div> -->
-
-![Fig. 1 - This is the image caption.](images/test_image.jpg){width=80%}
+![Fig. 1 - This is the image caption.](images/test_image.jpg){width=50%}
 
 
 ### Steps in each generation
@@ -44,13 +39,7 @@ The experiment consists of repeating a procedure called a *generation* several t
 
 Each student was provided with a *template* card, on which some cells of the grid were crossed with an **X**, forming a pattern. For example, a pattern may look like this:
 
-<!-- <div id=newfig>
-    <img src="images/test_image.jpg" alt="grid" width="200"/>
-    <figcaption> Fig. 2 - This is the image caption. </figcaption>
-</div>
-<br /> -->
-
-![Fig. 2 - This is the image caption.](images/test_image.jpg){width=80%}
+![Fig. 2 - This is the image caption.](images/test_image.jpg){width=50%}
 
 However, the *template* card was provided face down, so that the students could not see the pattern.
 
@@ -60,12 +49,7 @@ During the *memorization phase*, the students were allowed to look at the patter
 
 As soon as they had turned the template face down, they had to copy the observed pattern onto the empty cards they were provided (without being able to look at the template again). They were asked to try to create as many correct copies of the template as possible over $30$ seconds. They were told that translations or rotations of the pattern on the grid count as correct replicas. For example, the following three cards display the *same* pattern.
 
-<!-- <div id=newfig>
-    <img src="images/test_image.jpg" alt="grid" width="200"/>
-    <figcaption> Fig. 3 - This is the image caption. </figcaption>
-</div> -->
-
-![Fig. 3 - This is the image caption.](images/test_image.jpg){width=80%}
+![Fig. 3 - This is the image caption.](images/test_image.jpg){width=50%}
 
 #### 3. The competition phase
 
@@ -85,13 +69,7 @@ The obtained counts were organized into a table.
 
 The class was composed of $24$ students ($N=24$). At generation 0, the "population" of *template* cards that had been distributed to the students was composed of the following three patterns (8 copies each):
 
-<!-- <div id=newfig>
-    <img src="images/test_image.jpg" alt="grid" width="200"/>
-    <figcaption> Fig. 4 - This is the image caption. </figcaption>
-</div>
-<br /> -->
-
-![Fig. 4 - This is the image caption.](images/test_image.jpg){width=80%}
+![Fig. 4 - This is the image caption.](images/test_image.jpg){width=50%}
 
 We named the patterns with the letters **A**, **B** and **C**.
 
@@ -154,23 +132,11 @@ plt.show()
 
 Mutants at generation $1$:
 
-<!-- <div id=newfig>
-    <img src="images/test_image.jpg" alt="grid" width="200"/>
-    <figcaption> Fig. 5 - This is the image caption. </figcaption>
-</div>
-<br /> -->
-
-![Fig. 5 - This is the image caption.](images/test_image.jpg){width=80%}
+![Fig. 5 - This is the image caption.](images/test_image.jpg){width=50%}
 
 Mutants at generation $2$:
 
-<!-- <div id=newfig>
-    <img src="images/test_image.jpg" alt="grid" width="200"/>
-    <figcaption> Fig. 6 - This is the image caption. </figcaption>
-</div>
-<br /> -->
-
-![Fig. 6 - This is the image caption.](images/test_image.jpg){width=80%}
+![Fig. 6 - This is the image caption.](images/test_image.jpg){width=50%}
 
 Thus, we updated the table to account for the mutants. This way, all the cards were counted at each generation. For simplicity, we categorized all the mutants under a single class named **X**.
 
@@ -291,7 +257,9 @@ The graph displays how many individuals of each type are present in each generat
 
 ### Run your own experiments
 
-If you are running this as a Jupyter Notebook, you can go back to the [Settings](#Settings) and change the parameters that specify the initial conditions. In particular, if you have thought about the [Homework questions](#Homework-questions), it is time for you to put your thoughts to the test! For example, to get the answer to **Question 1**, you can change the population size to make it very big or very small, and run the simulation several times to see if results become more consistent or more unpredictable. Similarly, for **Question 2** you can play with the `w_a`, `w_b` and `w_c` parameters, which control the reproductive success (the "fitness") of each type. You can make it more unequal (for example, 12, 2, 1) or more similar to each other (for example, 12, 11, 10).
+If you are running this as a Jupyter Notebook\*, you can go back to the [Settings](#Settings) and change the parameters that specify the initial conditions. In particular, if you have thought about the [Homework questions](#Homework-questions), it is time for you to put your thoughts to the test! For example, to get the answer to **Question 1**, you can change the population size to make it very big or very small, and run the simulation several times to see if results become more consistent or more unpredictable. Similarly, for **Question 2** you can play with the `w_a`, `w_b` and `w_c` parameters, which control the reproductive success (the "fitness") of each type. You can make it more unequal (for example, 12, 2, 1) or more similar to each other (for example, 12, 11, 10).
+
+*The Jupyter Notebook can be downloaded [here](https://github.com/eliamascolo/replicards/blob/main/src/replicards/replicards.ipynb).*
 
 ---
 
