@@ -4,7 +4,6 @@ project:
 website:
   title: "Replicards"
   favicon: logo-icon.png
-  site-path: replicards.qmd
   google-analytics: "G-3HLZHZMB0V"
   back-to-top-navigation: true
   page-footer: "*Original idea: Elia Mascolo & Yseult Héjja-Brichard*" 
@@ -21,6 +20,7 @@ format:
       - brand
     css: styles.css
     toc: true
+    pagetitle: "Replicards | {{< meta title >}}"
 
 execute: 
   freeze: auto
