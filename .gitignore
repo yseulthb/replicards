@@ -3,3 +3,4 @@ src/replicards/__pycache__/evo_sim_objects.cpython-312.pyc
 /.ipynb_checkpoints
 /src/replicards/.ipynb_checkpoints
 /conda-out
+.netlify
