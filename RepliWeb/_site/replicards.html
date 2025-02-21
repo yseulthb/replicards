@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.13">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title> The Replicards  – Replicards</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./logo-icon.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-66ab7fd5e73b7f0a764e0d49b3e29ab1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-6bd9cfa162949bde0a231f530c97869d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3HLZHZMB0V"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-3HLZHZMB0V', { 'anonymize_ip': true});
+</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./logo.svg" alt="" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Replicards</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#protocol" id="toc-protocol" class="nav-link active" data-scroll-target="#protocol">Protocol</a>
+  <ul class="collapse">
+  <li><a href="#steps-in-each-generation" id="toc-steps-in-each-generation" class="nav-link" data-scroll-target="#steps-in-each-generation">Steps in each generation</a></li>
+  <li><a href="#recording-results" id="toc-recording-results" class="nav-link" data-scroll-target="#recording-results">Recording results</a></li>
+  </ul></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a></li>
+  <li><a href="#conclusions" id="toc-conclusions" class="nav-link" data-scroll-target="#conclusions">Conclusions</a>
+  <ul class="collapse">
+  <li><a href="#homework-questions" id="toc-homework-questions" class="nav-link" data-scroll-target="#homework-questions">Homework questions</a></li>
+  </ul></li>
+  <li><a href="#evolutionary-simulations" id="toc-evolutionary-simulations" class="nav-link" data-scroll-target="#evolutionary-simulations">Evolutionary simulations</a>
+  <ul class="collapse">
+  <li><a href="#the-virtual-replicards" id="toc-the-virtual-replicards" class="nav-link" data-scroll-target="#the-virtual-replicards">The virtual replicards</a></li>
+  <li><a href="#settings" id="toc-settings" class="nav-link" data-scroll-target="#settings">Settings</a></li>
+  <li><a href="#run-the-evolutionary-simulation" id="toc-run-the-evolutionary-simulation" class="nav-link" data-scroll-target="#run-the-evolutionary-simulation">Run the evolutionary simulation</a></li>
+  <li><a href="#run-your-own-experiments" id="toc-run-your-own-experiments" class="nav-link" data-scroll-target="#run-your-own-experiments">Run your own experiments</a></li>
+  </ul></li>
+  <li><a href="#in-class-discussion" id="toc-in-class-discussion" class="nav-link" data-scroll-target="#in-class-discussion">In-class discussion</a></li>
+  <li><a href="#phylogenesis" id="toc-phylogenesis" class="nav-link" data-scroll-target="#phylogenesis">Phylogenesis</a></li>
+  <li><a href="#materials-and-methods" id="toc-materials-and-methods" class="nav-link" data-scroll-target="#materials-and-methods">Materials and Methods</a>
+  <ul class="collapse">
+  <li><a href="#replicards" id="toc-replicards" class="nav-link" data-scroll-target="#replicards">Replicards</a></li>
+  <li><a href="#simulations" id="toc-simulations" class="nav-link" data-scroll-target="#simulations">Simulations</a></li>
+  </ul></li>
+  <li><a href="#acknowledgements" id="toc-acknowledgements" class="nav-link" data-scroll-target="#acknowledgements">Acknowledgements</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><center><br>
+<em>The Replicards</em><br>
+</center></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3HLZHZMB0V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3HLZHZMB0V');
+</script>
+<center>
+Concept by Elia Mascolo* and Yseult Héjja-Brichard
+</center>
+<center>
+✉️ eliamascolo94@gmail.com
+</center>
+<p><br> <br></p>
+<p>The aim of this interactive class is to demonstrate how replicants that can inherit mutations can undergo evolution by natural selection if the inheritable characteristics can affect their reproductive success. <br> <br></p>
+<section id="protocol" class="level2">
+<h2 class="anchored" data-anchor-id="protocol">Protocol</h2>
+<p>Each student was provided with a deck of square cards showing an empty <span class="math inline">\(8 \times 8\)</span> grid. This deck of cards was available to the students for the whole duration of the class.</p>
+<!-- <div id=newfig>
+    <img src="images/test_image.jpg" alt="grid" width="200"/>
+    <figcaption> Fig. 1 - This is the image caption. </figcaption>
+</div> -->
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/test_image.jpg" class="img-fluid figure-img" style="width:80.0%"></p>
+<figcaption>Fig. 1 - This is the image caption.</figcaption>
+</figure>
+</div>
+<section id="steps-in-each-generation" class="level3">
+<h3 class="anchored" data-anchor-id="steps-in-each-generation">Steps in each generation</h3>
+<p>The experiment consists of repeating a procedure called a <em>generation</em> several times. Each <em>generation</em> consists of the following three steps:</p>
+<section id="the-memorization-phase-10-seconds" class="level4">
+<h4 class="anchored" data-anchor-id="the-memorization-phase-10-seconds">1. The memorization phase (<span class="math inline">\(10\)</span> seconds)</h4>
+<p>Each student was provided with a <em>template</em> card, on which some cells of the grid were crossed with an <strong>X</strong>, forming a pattern. For example, a pattern may look like this:</p>
+<!-- <div id=newfig>
+    <img src="images/test_image.jpg" alt="grid" width="200"/>
+    <figcaption> Fig. 2 - This is the image caption. </figcaption>
+</div>
+<br /> -->
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/test_image.jpg" class="img-fluid figure-img" style="width:80.0%"></p>
+<figcaption>Fig. 2 - This is the image caption.</figcaption>
+</figure>
+</div>
+<p>However, the <em>template</em> card was provided face down, so that the students could not see the pattern.</p>
+<p>During the <em>memorization phase</em>, the students were allowed to look at the pattern on their <em>template</em> card for <span class="math inline">\(10\)</span> seconds and asked to try to memorize it. At the end of the <span class="math inline">\(10\)</span> seconds, the students had to turn the <em>template</em> card face down again.</p>
+</section>
+<section id="the-replication-phase-30-seconds" class="level4">
+<h4 class="anchored" data-anchor-id="the-replication-phase-30-seconds">2. The replication phase (<span class="math inline">\(30\)</span> seconds)</h4>
+<p>As soon as they had turned the template face down, they had to copy the observed pattern onto the empty cards they were provided (without being able to look at the template again). They were asked to try to create as many correct copies of the template as possible over <span class="math inline">\(30\)</span> seconds. They were told that translations or rotations of the pattern on the grid count as correct replicas. For example, the following three cards display the <em>same</em> pattern.</p>
+<!-- <div id=newfig>
+    <img src="images/test_image.jpg" alt="grid" width="200"/>
+    <figcaption> Fig. 3 - This is the image caption. </figcaption>
+</div> -->
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/test_image.jpg" class="img-fluid figure-img" style="width:80.0%"></p>
+<figcaption>Fig. 3 - This is the image caption.</figcaption>
+</figure>
+</div>
+</section>
+<section id="the-competition-phase" class="level4">
+<h4 class="anchored" data-anchor-id="the-competition-phase">3. The competition phase</h4>
+<p>The templates were collected into a pile called the “generation record”, which was put aside. Instead, the replicas were all put into a bag. The number of replicas largely exceeded the number of students. Each student was then randomly assigned a new <em>template</em> card randomly drawn from the bag. The remaining cards in the bag were discarded.</p>
+<p>Once each student has a new <em>template</em>, a new generation can start. The process is repeated until a desired number of generations is reached.</p>
+</section>
+</section>
+<section id="recording-results" class="level3">
+<h3 class="anchored" data-anchor-id="recording-results">Recording results</h3>
+<p>For each generation, the pile of <em>template</em> cards was collected (the “generation record”). Therefore, we had one pile of <span class="math inline">\(N\)</span> cards per generation (where <span class="math inline">\(N\)</span> is the number of students in the class). For each pile, the number of copies of each type of pattern was counted. Translated or rotated patterns count as the same pattern (see Fig XXX).</p>
+<p>The obtained counts were organized into a table.</p>
+<hr>
+</section>
+</section>
+<section id="results" class="level2">
+<h2 class="anchored" data-anchor-id="results">Results</h2>
+<p>The class was composed of <span class="math inline">\(24\)</span> students (<span class="math inline">\(N=24\)</span>). At generation 0, the “population” of <em>template</em> cards that had been distributed to the students was composed of the following three patterns (8 copies each):</p>
+<!-- <div id=newfig>
+    <img src="images/test_image.jpg" alt="grid" width="200"/>
+    <figcaption> Fig. 4 - This is the image caption. </figcaption>
+</div>
+<br /> -->
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/test_image.jpg" class="img-fluid figure-img" style="width:80.0%"></p>
+<figcaption>Fig. 4 - This is the image caption.</figcaption>
+</figure>
+</div>
+<p>We named the patterns with the letters <strong>A</strong>, <strong>B</strong> and <strong>C</strong>.</p>
+<p>The results of the experiment are summarized in the following table.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Generation</th>
+<th style="text-align: right;">A</th>
+<th style="text-align: right;">B</th>
+<th style="text-align: right;">C</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">0</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table>
+<p>We can also visualize the number of <strong>A</strong>, <strong>B</strong> and <strong>C</strong> over generations through a line plot as follows.</p>
+<div id="c9072a6f" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>plt.rcParams[<span class="st">'figure.figsize'</span>] <span class="op">=</span> [<span class="dv">5</span>, <span class="fl">2.5</span>]</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>plt.plot([<span class="dv">8</span>, <span class="dv">16</span>, <span class="dv">21</span>], label<span class="op">=</span><span class="st">'A'</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>plt.plot([<span class="dv">8</span>,  <span class="dv">1</span>,  <span class="dv">1</span>], label<span class="op">=</span><span class="st">'B'</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>plt.plot([<span class="dv">8</span>,  <span class="dv">2</span>,  <span class="dv">0</span>], label<span class="op">=</span><span class="st">'C'</span>)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>plt.xticks(<span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">3</span>)))</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'generation'</span>)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'number of individuals'</span>)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>plt.grid()</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>plt.legend()</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="replicards_files/figure-html/cell-2-output-1.png" width="436" height="245" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>👀 The students were asked to comment on the results shown in the table. They made two observations:</p>
+<ul>
+<li><p><strong>Observation 1</strong>:</p>
+<p>The number of <strong>A</strong> cards increased each generation, while the number of <strong>B</strong> and <strong>C</strong> types decreased very quickly.</p></li>
+<li><p><strong>Observation 2</strong>:</p>
+<p>The total number of <strong>A</strong>, <strong>B</strong> and <strong>C</strong> cards in generations <span class="math inline">\(1\)</span> and <span class="math inline">\(2\)</span> is no longer <span class="math inline">\(24\)</span>, even though in each generation one card was assigned to each student (so <span class="math inline">\(24\)</span> in total).</p></li>
+</ul>
+<p>💡 Students were asked to explain the observations.</p>
+<ul>
+<li><p><strong>Interpretation of Observation 1 (Hypothesis 1)</strong>:</p>
+<p>The students noted that reproducing pattern <strong>A</strong> was easier than reproducing patterns <strong>B</strong> or <strong>C</strong>. More copies of <strong>A</strong> were generated in each generation and, therefore, the bag contained more copies of <strong>A</strong> than the other types of patterns. As a consequence, students were more likely to receive an <strong>A</strong> card in the next generation, when cards were randomly drawn from the bag.</p></li>
+<li><p><strong>Interpretation of Observation 2 (Hypothesis 2)</strong>:</p>
+<p>One student suggested that, due to copying errors, some cards in generations <span class="math inline">\(1\)</span> and <span class="math inline">\(2\)</span> may not correspond to any of the three original patterns, <strong>A</strong>, <strong>B</strong> and <strong>C</strong>. That could explain why the count of A+B+C was no longer <span class="math inline">\(24\)</span>.</p></li>
+</ul>
+<p>🔍 We then tested the students’ explanations.</p>
+<ul>
+<li><p><strong>Testing Hypothesis 1</strong></p>
+<p>By looking at cards that went into the bag at the end of generation 0, which had been kept aside, we could test Hypothesis 1. The majority of the cards were of type <strong>A</strong>, confirming that more copies of <strong>A</strong> were produced, compared to <strong>B</strong> and <strong>C</strong> cards, although the templates were 8 per type and they all had the same amount of replication time. Hypothesis 1 was confirmed.</p></li>
+<li><p><strong>Testing Hypothesis 2</strong></p>
+<p>By inspecting the piles of cards for generations <span class="math inline">\(1\)</span> and <span class="math inline">\(2\)</span> (the “generation records”), we found some cards that didn’t correspond to any of the three original patterns <strong>A</strong>, <strong>B</strong> and <strong>C</strong>. These cards were termed <em>mutants</em>. The mutants were <span class="math inline">\(5\)</span> in generation 1 and <span class="math inline">\(2\)</span> in generation 2 (see <a href="#Mutants">Mutants</a>, below). When taking the mutants into account, the total number of cards per generation was indeed <span class="math inline">\(24\)</span>. Hypothesis 2 was confirmed.</p></li>
+</ul>
+<section id="mutants" class="level4">
+<h4 class="anchored" data-anchor-id="mutants">Mutants</h4>
+<p>Mutants at generation <span class="math inline">\(1\)</span>:</p>
+<!-- <div id=newfig>
+    <img src="images/test_image.jpg" alt="grid" width="200"/>
+    <figcaption> Fig. 5 - This is the image caption. </figcaption>
+</div>
+<br /> -->
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/test_image.jpg" class="img-fluid figure-img" style="width:80.0%"></p>
+<figcaption>Fig. 5 - This is the image caption.</figcaption>
+</figure>
+</div>
+<p>Mutants at generation <span class="math inline">\(2\)</span>:</p>
+<!-- <div id=newfig>
+    <img src="images/test_image.jpg" alt="grid" width="200"/>
+    <figcaption> Fig. 6 - This is the image caption. </figcaption>
+</div>
+<br /> -->
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/test_image.jpg" class="img-fluid figure-img" style="width:80.0%"></p>
+<figcaption>Fig. 6 - This is the image caption.</figcaption>
+</figure>
+</div>
+<p>Thus, we updated the table to account for the mutants. This way, all the cards were counted at each generation. For simplicity, we categorized all the mutants under a single class named <strong>X</strong>.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Generation</th>
+<th style="text-align: right;">A</th>
+<th style="text-align: right;">B</th>
+<th style="text-align: right;">C</th>
+<th style="text-align: right;">X</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">0</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<hr>
+</section>
+</section>
+<section id="conclusions" class="level2">
+<h2 class="anchored" data-anchor-id="conclusions">Conclusions</h2>
+<p>We concluded that the frequency of each type of pattern can change across generations due to <em>chance</em> (after all, the cards composing each new generation are <em>randomly</em> sampled from the bag) but also partly due to another logical principle. The principle is the following: if a pattern is more successful at being replicated than the others, its frequency in the population is more likely to increase. Now that we understand these two principles acting on the frequencies of the competing replicants, we are ready to name them according to the scientific literature:</p>
+<ol type="1">
+<li><strong><em>GENETIC DRIFT</em></strong>: the (unpredictable) effect that random chance has on the frequency of each type of replicant.</li>
+<li><strong><em>NATURAL SELECTION</em></strong>: the (predictable) bias in the frequency of each type of replicant due to their (different) reproductive success.</li>
+</ol>
+<p>The overall process that the population of <span class="math inline">\(N\)</span> replicants underwent, where the frequencies of the different types change over generations, is called <strong><em>EVOLUTION</em></strong>.</p>
+<section id="homework-questions" class="level3">
+<h3 class="anchored" data-anchor-id="homework-questions">Homework questions</h3>
+<section id="question-1" class="level4">
+<h4 class="anchored" data-anchor-id="question-1">Question 1</h4>
+<p>We discussed that evolution is not completely predictable because chance is involved in several parts of the process. However, some scenarios may be more/less predictable than others. As an exercise, try to think about the role that the population size <span class="math inline">\(N\)</span> plays. For example, compare the scenarios where <span class="math inline">\(N\)</span> is very small/very large. Which one will evolve in a more predictable way?</p>
+</section>
+<section id="question-2" class="level4">
+<h4 class="anchored" data-anchor-id="question-2">Question 2</h4>
+<p>The balance between <em>genetic drift</em> and <em>natural selection</em> (see <a href="#Conclusions">Conclusions</a> to check the terminology) can also depend on the difference in <em>reproductive success</em> (evolutionary biologists use the term <em>fitness</em>) between the different types of replicants. Compare the scenarios where the types are very similar/very different in reproductive success. Which one will evolve in a more predictable way?</p>
+<hr>
+</section>
+</section>
+</section>
+<section id="evolutionary-simulations" class="level2">
+<h2 class="anchored" data-anchor-id="evolutionary-simulations">Evolutionary simulations</h2>
+<p>The experiment we performed with the <em>replicards</em> is a demonstration of how evolution by natural selection works. However, it has two important limitations: 1. We only run a couple of generations, but it would be interesting to follow the evolution of the <em>replicards</em> through many generations. 2. We only experimented with a given initial condition (patterns <strong>A</strong>, <strong>B</strong> and <strong>C</strong> in equal frequencies), but it would be interesting to test patterns that are more different or more similar to each other in terms of their reproductive success.</p>
+<p>To that end, we can use <strong>computer simulations</strong> to get very quick empirical answers to our questions.</p>
+<section id="the-virtual-replicards" class="level3">
+<h3 class="anchored" data-anchor-id="the-virtual-replicards">The virtual replicards</h3>
+<p>We can use the Python programming language to run computer simulations of the <em>replicards</em>’ evolution, by importing the code (XXX). Specifically, we will import the following types of Pthon <em>classes</em></p>
+<ul>
+<li><code>Organism</code> : objects of this class represent the individuals composing the population (like the <em>replicards</em>); they can <code>reproduce</code> (i.e., create a copy of themselves).</li>
+<li><code>Population</code> : this is a handy class that can be used to generate reports of the evolution of a population; it can visually summarize the results of a simulation with a plot.</li>
+</ul>
+<p>as well as the <em>create</em> function</p>
+<ul>
+<li><code>create</code> : a function that can be used to generate the initial population. It requires to specify three parameters: (1) the type of organism, i.e., whatever name that identifies that type; (2) the (expected) reproductive success of that type of organism; (3) the number of organisms of that type that must be created.</li>
+</ul>
+<p>The code is imported as follows.</p>
+<div id="92a636c1" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> random</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> evo_sim_objects <span class="im">import</span> Population, create</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="settings" class="level3">
+<h3 class="anchored" data-anchor-id="settings">Settings</h3>
+<p>We can now set the initial condition (the population at “Generation 0”) for our evolutionary simulation.</p>
+<p>First, we set how many “organisms” per type are present at the beginning. Here we simulate the in-class experiment by setting three patterns, 8 copies each, for a total population size of <span class="math inline">\(N=24\)</span>.</p>
+<div id="813db31f" class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>n_a <span class="op">=</span> <span class="dv">8</span>  <span class="co"># Initial number of A</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>n_b <span class="op">=</span> <span class="dv">8</span>  <span class="co"># Initial number of B</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>n_c <span class="op">=</span> <span class="dv">8</span>  <span class="co"># Initial number of C</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Next, we can decide how easy it will be to replicate each type of pattern, by setting the expected (average) number of copies each pattern get at each generation.</p>
+<div id="dbc9a625" class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>w_a <span class="op">=</span> <span class="dv">12</span>  <span class="co"># Expected number of offspring for A per generation</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>w_b <span class="op">=</span>  <span class="dv">8</span>  <span class="co"># Expected number of offspring for B per generation</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>w_c <span class="op">=</span>  <span class="dv">4</span>  <span class="co"># Expected number of offspring for C per generation</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="run-the-evolutionary-simulation" class="level3">
+<h3 class="anchored" data-anchor-id="run-the-evolutionary-simulation">Run the evolutionary simulation</h3>
+<p>We are now ready to run a computer simulation.</p>
+<div id="7da7af8c" class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> random</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> evo_sim_objects <span class="im">import</span> Population, create</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Initialize population</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>pop <span class="op">=</span> Population(create(<span class="st">'A'</span>, w_a, n_a) <span class="op">+</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>                 create(<span class="st">'B'</span>, w_b, n_b) <span class="op">+</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>                 create(<span class="st">'C'</span>, w_c, n_c))</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Population size</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>N <span class="op">=</span> pop.size</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"The population size is N ="</span>, N)</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Keep evolving until fixation is reached</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> <span class="kw">not</span> pop.fixation:</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Reproduction based on fitness</span></span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>    pop_offspring <span class="op">=</span> []</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> org <span class="kw">in</span> pop.organisms:</span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>        pop_offspring <span class="op">+=</span> org.reproduce()</span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>    parents_and_offspring <span class="op">=</span> pop.organisms <span class="op">+</span> pop_offspring</span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Maintain population size constant at N, the environment's carrying capacity</span></span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>    new_pop <span class="op">=</span> random.sample(parents_and_offspring, N)</span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Update the population</span></span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a>    pop.update(new_pop)</span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot results of the evolutionary simulation</span></span>
+<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a>pop.plot_evolution()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>The population size is N = 24</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="replicards_files/figure-html/cell-6-output-2.png" width="418" height="230" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>The graph displays how many individuals of each type are present in each generation, while the total population size remains constant. The simulation stopped when one of the types took over the population completely.</p>
+</section>
+<section id="run-your-own-experiments" class="level3">
+<h3 class="anchored" data-anchor-id="run-your-own-experiments">Run your own experiments</h3>
+<p>If you are running this as a Jupyter Notebook, you can go back to the <a href="#Settings">Settings</a> and change the parameters that specify the initial conditions. In particular, if you have thought about the <a href="#Homework-questions">Homework questions</a>, it is time for you to put your thoughts to the test! For example, to get the answer to <strong>Question 1</strong>, you can change the population size to make it very big or very small, and run the simulation several times to see if results become more consistent or more unpredictable. Similarly, for <strong>Question 2</strong> you can play with the <code>w_a</code>, <code>w_b</code> and <code>w_c</code> parameters, which control the reproductive success (the “fitness”) of each type. You can make it more unequal (for example, 12, 2, 1) or more similar to each other (for example, 12, 11, 10).</p>
+<hr>
+</section>
+</section>
+<section id="in-class-discussion" class="level2">
+<h2 class="anchored" data-anchor-id="in-class-discussion">In-class discussion</h2>
+<section id="randomness" class="level4">
+<h4 class="anchored" data-anchor-id="randomness">Randomness</h4>
+<p>When running the same simulation (with the same initial population) several times, we observed different outcomes. Why is that?</p>
+<p>In the code, the <code>w_a</code>, <code>w_b</code> and <code>w_c</code> parameters define the <em>average</em> number of offspring per generation. However, the exact number of offspring is randomly assigned (if you are statistically minded, the precise way this is done is by sampling from a Poisson distribution). Moreover, at each generation, <span class="math inline">\(N\)</span> individuals are randomly sampled (to keep the population size constant). These random processes make the evolution <em>to some extent</em> unpredictable. Thus, they simulate the phenomenon that we called <em>genetic drift</em> (see <a href="#Conclusions">Conclusions</a> to check the terminology).</p>
+<p>The computer simulations can help us demonstrate empirically the balance between random chance and natural selection in evolving populations (see the paragraph “<a href="#Run-your-own-experiments">Run your own experiments</a>”).</p>
+</section>
+<section id="mutations" class="level4">
+<h4 class="anchored" data-anchor-id="mutations">Mutations</h4>
+<p>However, a limitation of our computer simulations is that the replication occurs without errors. No mutations are introduced, and therefore, no <em>new</em> types. On the contrary, the experiment performed by the students with the <em>replicards</em> included accidental mutations, allowing for the appearance of <a href="#Mutants">mutants</a>.</p>
+<blockquote class="blockquote">
+<p>What is a mutation?</p>
+</blockquote>
+<p>We reasoned that <strong>not all <em>modifications</em> qualify as <em>mutations</em></strong>. For example, a card got bent during the replication process. However, when being used as a <em>template</em>, the copies of that card (the “offspring”) were not bent because the students were only copying the pattern of <strong>X</strong> marks, not every possible physical feature. Evolution acts on mutations, which are not any kind of modifications but rather the modification of <strong><em>inheritable</em></strong> traits. In the case of the <em>replicards</em>, the inheritable traits are the positions of the <strong>X</strong> marks, which are a form of digital information. Actual living beings don’t carry grids of <strong>X</strong> marks, but rather a sequence of <em>nucleotides</em> making a long molecule called DNA, which is also a form of digital information. Modifying other parts of the organism would constitute a modification but not a mutation. For example, if I lose a finger in an accident, my children will still be born with 10 fingers, not 9. Instead, if the DNA sequence in my “germline” cells gets mutated in some parts (genes) related to finger development (for example, HoxA and HoxD genes), my offspring could have a number of fingers different from 10, even if I have 10 fingers (as in the case of people with polydactyly).</p>
+<blockquote class="blockquote">
+<p>What do you think could happen if we were to continue the <em>replicards</em> protocol for a very very large number of generations?</p>
+</blockquote>
+<p>A student suggested that eventually the population would be taken over by a <em>replicard</em> containing a single <strong>X</strong>. This pattern could be produced if, at the end of the 30 seconds of the replication phase, a student had just started making a new copy of the template. The prematurely interrupted replication process would leave the card filled with only one <strong>X</strong> mark. If this card is lucky enough to be sampled from the bag, it could end up dominating the population due to its high reproductive success (high <em>fitness</em>). This high success would be simply due to the fact that many more copies of it could be made in 30 seconds, compared to other more complicated patterns.</p>
+<hr>
+</section>
+</section>
+<section id="phylogenesis" class="level2">
+<h2 class="anchored" data-anchor-id="phylogenesis">Phylogenesis</h2>
+<p>XXX Text here …</p>
+<hr>
+</section>
+<section id="materials-and-methods" class="level2">
+<h2 class="anchored" data-anchor-id="materials-and-methods">Materials and Methods</h2>
+<section id="replicards" class="level3">
+<h3 class="anchored" data-anchor-id="replicards">Replicards</h3>
+<p>The <em>replicards</em> were <span class="math inline">\(7 \times 7\)</span> square grids (of size 7 cm <span class="math inline">\(\times\)</span> 7 cm), printed on thick paper. The <strong>X</strong> marks on the cells were drawn by the students using pencils.</p>
+</section>
+<section id="simulations" class="level3">
+<h3 class="anchored" data-anchor-id="simulations">Simulations</h3>
+<p>The code was written in <em>Python</em> and is available at XXX.</p>
+<hr>
+</section>
+</section>
+<section id="acknowledgements" class="level2">
+<h2 class="anchored" data-anchor-id="acknowledgements">Acknowledgements</h2>
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p><em>Original idea: Elia Mascolo &amp; Yseult Héjja-Brichard</em></p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
