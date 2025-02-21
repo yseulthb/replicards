@@ -1,0 +1,14 @@
+{
+  "index.qmd": {
+    "index.html": "28fa03e9"
+  },
+  "replicards.qmd": {
+    "replicards.html": "396dc347"
+  },
+  "about.qmd": {
+    "about.html": "4dbb6dd6"
+  },
+  "src/replicards/replicards.ipynb": {
+    "replicards.html": "94d50ef8"
+  }
+}
