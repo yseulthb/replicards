@@ -1,0 +1,1 @@
+Sitemap: https://replicards.netlify.app/sitemap.xml
