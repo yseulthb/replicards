@@ -10,7 +10,7 @@ website:
   navbar:
     logo: logo.svg
     left:
-      - href: replicards.qmd
+      - href: index.qmd
       - href: about.qmd
         text: About
 
