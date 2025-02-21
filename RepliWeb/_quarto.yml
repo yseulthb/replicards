@@ -11,8 +11,7 @@ website:
     logo: logo.svg
     left:
       - href: index.qmd
-      - href: about.qmd
-        text: About
+      
 
 format:
   html:
