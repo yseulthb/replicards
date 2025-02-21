@@ -166,8 +166,17 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
+<<<<<<< HEAD
+    <a class="nav-link" href="../../replicards.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About</span></a>
+=======
     <a class="nav-link" href="../../index.html"> 
 <span class="menu-text"></span></a>
+>>>>>>> main
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -678,7 +687,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
+<<<<<<< HEAD
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+=======
       var filterRegex = new RegExp("https:\/\/yseulthb\.github\.io\/replicards\/");
+>>>>>>> main
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
