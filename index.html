@@ -343,7 +343,7 @@ Concept by <a href="https://eliamascolo.github.io/">Elia Mascolo</a> and <a href
 </tbody>
 </table>
 <p>We can also visualize the number of <strong>A</strong>, <strong>B</strong> and <strong>C</strong> over generations through a line plot as follows.</p>
-<div id="bfd0f139" class="cell" data-execution_count="1">
+<div id="280640bf" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>plt.rcParams[<span class="st">'figure.figsize'</span>] <span class="op">=</span> [<span class="dv">5</span>, <span class="fl">2.5</span>]</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>plt.plot([<span class="dv">8</span>, <span class="dv">16</span>, <span class="dv">21</span>], label<span class="op">=</span><span class="st">'A'</span>)</span>
@@ -480,7 +480,7 @@ Concept by <a href="https://eliamascolo.github.io/">Elia Mascolo</a> and <a href
 <li><code>create</code> : a function that can be used to generate the initial population. It requires to specify three parameters: (1) the type of organism, i.e., whatever name that identifies that type; (2) the (expected) reproductive success of that type of organism; (3) the number of organisms of that type that must be created.</li>
 </ul>
 <p>We import the needed code from the <code>replicards</code> library, as well as the <code>random</code> library as follows</p>
-<div id="6fa52b5d" class="cell" data-execution_count="2">
+<div id="3116d746" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> random</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> evo_sim_objects <span class="im">import</span> Population, create</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -489,13 +489,13 @@ Concept by <a href="https://eliamascolo.github.io/">Elia Mascolo</a> and <a href
 <h3 class="anchored" data-anchor-id="settings">Settings</h3>
 <p>We can now set the initial condition (the population at “Generation 0”) for our evolutionary simulation.</p>
 <p>First, we set how many “organisms” per type are present at the beginning. Here we simulate the in-class experiment by setting three patterns, 8 copies each, for a total population size of <span class="math inline">\(N=24\)</span>.</p>
-<div id="cae18808" class="cell" data-execution_count="3">
+<div id="208a2a2f" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>n_a <span class="op">=</span> <span class="dv">8</span>  <span class="co"># Initial number of A</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>n_b <span class="op">=</span> <span class="dv">8</span>  <span class="co"># Initial number of B</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>n_c <span class="op">=</span> <span class="dv">8</span>  <span class="co"># Initial number of C</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Next, we can decide how easy it will be to replicate each type of pattern, by setting the expected (average) number of copies each pattern get at each generation.</p>
-<div id="6471efe5" class="cell" data-execution_count="4">
+<div id="04d862ca" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>w_a <span class="op">=</span> <span class="dv">12</span>  <span class="co"># Expected number of offspring for A per generation</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>w_b <span class="op">=</span>  <span class="dv">8</span>  <span class="co"># Expected number of offspring for B per generation</span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>w_c <span class="op">=</span>  <span class="dv">4</span>  <span class="co"># Expected number of offspring for C per generation</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -504,7 +504,7 @@ Concept by <a href="https://eliamascolo.github.io/">Elia Mascolo</a> and <a href
 <section id="run-the-evolutionary-simulation" class="level3">
 <h3 class="anchored" data-anchor-id="run-the-evolutionary-simulation">Run the evolutionary simulation</h3>
 <p>We are now ready to run a computer simulation.</p>
-<div id="d3e20ed9" class="cell" data-execution_count="5">
+<div id="99f0fd3f" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Initialize population</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>pop <span class="op">=</span> Population(create(<span class="st">'A'</span>, w_a, n_a) <span class="op">+</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>                 create(<span class="st">'B'</span>, w_b, n_b) <span class="op">+</span></span>
@@ -547,7 +547,7 @@ Concept by <a href="https://eliamascolo.github.io/">Elia Mascolo</a> and <a href
 <section id="run-your-own-experiments" class="level3">
 <h3 class="anchored" data-anchor-id="run-your-own-experiments">Run your own experiments</h3>
 <p>If you are running this as a Jupyter Notebook*, you can go back to the <a href="#Settings">Settings</a> and change the parameters that specify the initial conditions. In particular, if you have thought about the <a href="#Homework-questions">Homework questions</a>, it is time for you to put your thoughts to the test! For example, to get the answer to <strong>Question 1</strong>, you can change the population size to make it very big or very small, and run the simulation several times to see if results become more consistent or more unpredictable. Similarly, for <strong>Question 2</strong> you can play with the <code>w_a</code>, <code>w_b</code> and <code>w_c</code> parameters, which control the reproductive success (the “fitness”) of each type. You can make it more unequal (for example, 12, 2, 1) or more similar to each other (for example, 12, 11, 10).</p>
-<p><em>The Jupyter Notebook can be downloaded <a href="https://github.com/eliamascolo/replicards/blob/main/src/replicards/replicards.ipynb">here</a>.</em></p>
+<p><em>*The Jupyter Notebook can be downloaded <a href="https://github.com/eliamascolo/replicards/blob/main/src/replicards/replicards.ipynb">here</a>.</em></p>
 <hr>
 </section>
 </section>
