@@ -4,23 +4,14 @@ project:
 website:
   title: "Replicards"
   favicon: logo-icon.png
-<<<<<<< HEAD
-  site-path: replicards.qmd
-=======
->>>>>>> main
   google-analytics: "G-3HLZHZMB0V"
   back-to-top-navigation: true
   page-footer: "*Original idea: Elia Mascolo & Yseult Héjja-Brichard*" 
   navbar:
     logo: logo.svg
     left:
-<<<<<<< HEAD
-      - href: about.qmd
-        text: About
-=======
       - href: index.qmd
       
->>>>>>> main
 
 format:
   html:
@@ -30,12 +21,5 @@ format:
     css: styles.css
     toc: true
 
-<<<<<<< HEAD
-
-
-=======
 execute: 
   freeze: auto
-
-  
->>>>>>> main

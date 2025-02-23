@@ -2,39 +2,42 @@
 title: <center>*The Replicards*</center>
 jupyter: python3
 ---
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3HLZHZMB0V"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-3HLZHZMB0V');
-</script>
 
 <center> Concept by Elia Mascolo* and Yseult Héjja-Brichard </center>
-<center> ✉️ eliamascolo94@gmail.com </center>
+<center> * ✉️ eliamascolo94@gmail.com </center>
 
 
 <br />
 <br />
 
-The aim of this interactive class is to demonstrate how replicants that can inherit mutations can undergo evolution by natural selection if the inheritable characteristics can affect their reproductive success.
+> ***The aim of this interactive class is to demonstrate how replicants that can inherit mutations can undergo evolution by natural selection if the inheritable characteristics can affect their reproductive success.***
+
 <br />
 <br />
+
+<hr style="border:1px solid gray">
+
+## Table of Contents:
+* [Protocol](#Protocol)
+* [Results](#Results)
+* [Conclulsions](#Conclusions)
+* [Evolutionary simulations](#Evolutionary-simulations)
+* [In-class discussion](#In-class-discussion)
+* [Phylogenesis](#Phylogenesis)
+* [Materials and Methods](#Materials-and-Methods)
+* [Acknowledgements](#Acknowledgements)
+
+---
 
 
 ## Protocol
 
 Each student was provided with a deck of square cards showing an empty $8 \times 8$ grid. This deck of cards was available to the students for the whole duration of the class.
 
-<!-- <div id=newfig>
-    <img src="images/test_image.jpg" alt="grid" width="200"/>
-    <figcaption> Fig. 1 - This is the image caption. </figcaption>
-</div> -->
-
-![Fig. 1 - This is the image caption.](images/test_image.jpg){width=80%}
-
+<div id=newfig>
+    <img src="images/starter_deck.jpg" alt="Picture of a deck of blank cards showing empty grids." width="200"/>
+    <figcaption style="color:blue"> Fig. 1 - Deck of blank cards showing empty grids. Each student had a deck like this as raw material for making copies of their template card. </figcaption>
+</div>
 
 ### Steps in each generation
 
@@ -44,13 +47,11 @@ The experiment consists of repeating a procedure called a *generation* several t
 
 Each student was provided with a *template* card, on which some cells of the grid were crossed with an **X**, forming a pattern. For example, a pattern may look like this:
 
-<!-- <div id=newfig>
-    <img src="images/test_image.jpg" alt="grid" width="200"/>
-    <figcaption> Fig. 2 - This is the image caption. </figcaption>
+<div id=newfig>
+    <img src="images/random_replicard_pattern.jpg" alt="Example of a pattern that can be encoded in a replicard." width="400"/>
+    <figcaption style="color:blue"> Fig. 2 - Example of a pattern that can be encoded in a <i>replicard</i>. On the left, the picture of the physical replicard; on the right, the corresponding schematic representation.</figcaption>
 </div>
-<br /> -->
-
-![Fig. 2 - This is the image caption.](images/test_image.jpg){width=80%}
+<br />
 
 However, the *template* card was provided face down, so that the students could not see the pattern.
 
@@ -60,12 +61,10 @@ During the *memorization phase*, the students were allowed to look at the patter
 
 As soon as they had turned the template face down, they had to copy the observed pattern onto the empty cards they were provided (without being able to look at the template again). They were asked to try to create as many correct copies of the template as possible over $30$ seconds. They were told that translations or rotations of the pattern on the grid count as correct replicas. For example, the following three cards display the *same* pattern.
 
-<!-- <div id=newfig>
-    <img src="images/test_image.jpg" alt="grid" width="200"/>
-    <figcaption> Fig. 3 - This is the image caption. </figcaption>
-</div> -->
-
-![Fig. 3 - This is the image caption.](images/test_image.jpg){width=80%}
+<div id=newfig>
+    <img src="images/PatternTrio.png" alt="Example of three cards showing the same pattern in different positions or with a different orientation." width="600"/>
+    <figcaption style="color:blue"> Fig. 3 - These three <i>replicards</i> encode for the same pattern. </figcaption>
+</div>
 
 #### 3. The competition phase
 
@@ -85,13 +84,11 @@ The obtained counts were organized into a table.
 
 The class was composed of $24$ students ($N=24$). At generation 0, the "population" of *template* cards that had been distributed to the students was composed of the following three patterns (8 copies each):
 
-<!-- <div id=newfig>
-    <img src="images/test_image.jpg" alt="grid" width="200"/>
-    <figcaption> Fig. 4 - This is the image caption. </figcaption>
+<div id=newfig>
+    <img src="images/Patterns_A_B_C.jpg" alt="The initial replicards provided to the students." width="600"/>
+    <figcaption style="color:blue"> Fig. 4 - The initial replicards provided to the students (generation 0) all belong to three types shown here: patterns A, B and C. </figcaption>
 </div>
-<br /> -->
-
-![Fig. 4 - This is the image caption.](images/test_image.jpg){width=80%}
+<br />
 
 We named the patterns with the letters **A**, **B** and **C**.
 
@@ -121,11 +118,9 @@ plt.show()
 ```
 
 &#x1F440; The students were asked to comment on the results shown in the table. They made two observations:
-
 * **Observation 1**:
 
   The number of **A** cards increased each generation, while the number of **B** and **C** types decreased very quickly.
-
 * **Observation 2**:
   
   The total number of **A**, **B** and **C** cards in generations $1$ and $2$ is no longer $24$, even though in each generation one card was assigned to each student (so $24$ in total).
@@ -152,25 +147,21 @@ plt.show()
 
 #### Mutants
 
-Mutants at generation $1$:
+##### Mutants at generation $1$:
 
-<!-- <div id=newfig>
-    <img src="images/test_image.jpg" alt="grid" width="200"/>
-    <figcaption> Fig. 5 - This is the image caption. </figcaption>
+<div id=newfig>
+    <img src="images/mutants_gen1.jpg" alt="Picture of the mutant replicards at generation 1." width="1000"/>
+    <figcaption style="color:blue"> Fig. 5 - At generation 1, five <i>replicards</i> did not belong to any of the initial patterns (A, B or C). Those five <i>replicards</i> were termed <i>mutants</i> and are shown here. They all seem variants of pattern C. Three of them are the same and are termed C$\alpha$. The other two are different types of mutants and are termed C$\beta$ and C$\gamma$. </figcaption>
 </div>
-<br /> -->
+<br />
 
-![Fig. 5 - This is the image caption.](images/test_image.jpg){width=80%}
+##### Mutants at generation $2$:
 
-Mutants at generation $2$:
-
-<!-- <div id=newfig>
-    <img src="images/test_image.jpg" alt="grid" width="200"/>
-    <figcaption> Fig. 6 - This is the image caption. </figcaption>
+<div id=newfig>
+    <img src="images/mutants_gen2.jpg" alt="Picture of the mutant replicards at generation 2." width="400"/>
+    <figcaption style="color:blue"> Fig. 6 - The two mutants that survived to generation 2. They are both of type C$\beta$. </figcaption>
 </div>
-<br /> -->
-
-![Fig. 6 - This is the image caption.](images/test_image.jpg){width=80%}
+<br />
 
 Thus, we updated the table to account for the mutants. This way, all the cards were counted at each generation. For simplicity, we categorized all the mutants under a single class named **X**.
 
@@ -215,20 +206,18 @@ To that end, we can use **computer simulations** to get very quick empirical ans
 
 ### The virtual replicards
 
-We can use the Python programming language to run computer simulations of the *replicards*' evolution, by importing the code (XXX). Specifically, we will import the following types of Pthon *classes*
-
+We can use the programming language *Python* to run computer simulations of the *replicards*' evolution, by importing the public Python library for the replicards (the source code is [here](https://github.com/eliamascolo/replicards)). The code provides the following types of custom Python *classes*
 * `Organism` : objects of this class represent the individuals composing the population (like the *replicards*); they can `reproduce` (i.e., create a copy of themselves).
 * `Population` : this is a handy class that can be used to generate reports of the evolution of a population; it can visually summarize the results of a simulation with a plot.
 
 as well as the *create* function
-
 * `create` : a function that can be used to generate the initial population. It requires to specify three parameters: (1) the type of organism, i.e., whatever name that identifies that type; (2) the (expected) reproductive success of that type of organism; (3) the number of organisms of that type that must be created.
 
-The code is imported as follows.
+We import the needed code from the `replicards` library, as well as the `random` library as follows
 
 ```{python}
+from replicards import Population, create
 import random
-from evo_sim_objects import Population, create
 ```
 
 ### Settings
@@ -256,9 +245,6 @@ w_c =  4  # Expected number of offspring for C per generation
 We are now ready to run a computer simulation.
 
 ```{python}
-import random
-from evo_sim_objects import Population, create
-
 # Initialize population
 pop = Population(create('A', w_a, n_a) +
                  create('B', w_b, n_b) +
@@ -321,7 +307,13 @@ A student suggested that eventually the population would be taken over by a *rep
 
 ## Phylogenesis
 
-XXX Text here ...
+By inspecting the patterns found in the mutants (see the [Mutants](#Mutants) paragraph), we can infer their *phylogenetic tree*, which is a convenient way to represent how the *types* are related, analogous to family trees. In the tree below, we can see that all the mutants were descendants of pattern **C**. This is not too surprising because we reasoned that pattern **C** was the hardest to replicate and so the easiest to get wrong when trying to copy it. The mutants **C$\alpha$**, **C$\beta$** and **C$\gamma$** appeared at generation 1. We can also see that patterns **C$\alpha$** and **C$\gamma$** went extinct at generation 2.
+
+<div id=newfig>
+    <img src="images/phylogenetic_tree_replicards.jpg" alt="phylogenetic tree of the mutant replicards." width="1000"/>
+    <figcaption style="color:blue"> Fig. 7 - Phylogenetic tree of the <i>mutant</i> replicards. </figcaption>
+</div>
+<br />
 
 ---
 
@@ -333,7 +325,7 @@ The *replicards* were $7 \times 7$ square grids (of size 7 cm $\times$ 7 cm), pr
 
 ### Simulations
 
-The code was written in *Python* and is available at XXX.
+The code was written in *Python* and is available at https://github.com/eliamascolo/replicards.
 
 ---
 
