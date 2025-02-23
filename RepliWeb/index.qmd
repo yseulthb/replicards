@@ -256,7 +256,7 @@ The graph displays how many individuals of each type are present in each generat
 
 If you are running this as a Jupyter Notebook\*, you can go back to the [Settings](#Settings) and change the parameters that specify the initial conditions. In particular, if you have thought about the [Homework questions](#Homework-questions), it is time for you to put your thoughts to the test! For example, to get the answer to **Question 1**, you can change the population size to make it very big or very small, and run the simulation several times to see if results become more consistent or more unpredictable. Similarly, for **Question 2** you can play with the `w_a`, `w_b` and `w_c` parameters, which control the reproductive success (the "fitness") of each type. You can make it more unequal (for example, 12, 2, 1) or more similar to each other (for example, 12, 11, 10).
 
-*The Jupyter Notebook can be downloaded [here](https://github.com/eliamascolo/replicards/blob/main/src/replicards/replicards.ipynb).*
+*\*The Jupyter Notebook can be downloaded [here](https://github.com/eliamascolo/replicards/blob/main/src/replicards/replicards.ipynb).*
 
 ---
 
