@@ -59,7 +59,7 @@ Once each student has a new *template*, a new generation can start. The process 
 
 ### Recording results
 
-For each generation, the pile of *template* cards was collected (the "generation record"). Therefore, we had one pile of $N$ cards per generation (where $N$ is the number of students in the class). For each pile, the number of copies of each type of pattern was counted. Translated or rotated patterns count as the same pattern (see Fig XXX).
+For each generation, the pile of *template* cards was collected (the "generation record"). Therefore, we had one pile of $N$ cards per generation (where $N$ is the number of students in the class). For each pile, the number of copies of each type of pattern was counted. Translated or rotated patterns count as the same pattern (see Fig 3).
 
 The obtained counts were organized into a table.
 
