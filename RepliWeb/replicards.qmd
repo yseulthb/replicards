@@ -216,7 +216,7 @@ as well as the *create* function
 We import the needed code from the `replicards` library, as well as the `random` library as follows
 
 ```{python}
-from replicards import Population, create
+from evo_sim_objects import Population, create
 import random
 ```
 
