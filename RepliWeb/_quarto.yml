@@ -6,11 +6,14 @@ website:
   favicon: logo-icon.png
   google-analytics: "G-3HLZHZMB0V"
   back-to-top-navigation: true
-  page-footer: "*Original idea: Elia Mascolo & Yseult Héjja-Brichard*" 
   navbar:
     logo: logo.svg
     left:
       - href: index.qmd
+  page-footer:
+    border: true
+    center: "*Original idea: Elia Mascolo & Yseult Héjja-Brichard*" 
+    right: "made with ︎♥️ & [Quarto](https://quarto.org)"
       
 
 format:

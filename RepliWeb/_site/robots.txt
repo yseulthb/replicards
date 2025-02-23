@@ -1,1 +1,1 @@
-Sitemap: https://replicards.netlify.app/sitemap.xml
+Sitemap: https://yseulthb.github.io/replicards/sitemap.xml

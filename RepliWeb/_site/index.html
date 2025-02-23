@@ -74,7 +74,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-66ab7fd5e73b7f0a764e0d49b3e29ab1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-6bd9cfa162949bde0a231f530c97869d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-4b6a705dd283f61bb969c86ae060a4f5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -271,7 +271,7 @@ Concept by <a href="https://eliamascolo.github.io/">Elia Mascolo</a> and <a href
 <p>Each student was provided with a <em>template</em> card, on which some cells of the grid were crossed with an <strong>X</strong>, forming a pattern. For example, a pattern may look like this:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/random_replicard_pattern.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
+<p><img src="images/random_replicard_pattern.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
 <figcaption>Fig. 2 - Example of a pattern that can be encoded in a <em>replicard</em>. On the left, the picture of the physical replicard; on the right, the corresponding schematic representation.</figcaption>
 </figure>
 </div>
@@ -283,7 +283,7 @@ Concept by <a href="https://eliamascolo.github.io/">Elia Mascolo</a> and <a href
 <p>As soon as they had turned the template face down, they had to copy the observed pattern onto the empty cards they were provided (without being able to look at the template again). They were asked to try to create as many correct copies of the template as possible over <span class="math inline">\(30\)</span> seconds. They were told that translations or rotations of the pattern on the grid count as correct replicas. For example, the following three cards display the <em>same</em> pattern.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/PatternTrio.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<p><img src="images/PatternTrio.png" class="img-fluid figure-img"></p>
 <figcaption>Fig. 3 - These three <em>replicards</em> encode for the same pattern.</figcaption>
 </figure>
 </div>
@@ -306,7 +306,7 @@ Concept by <a href="https://eliamascolo.github.io/">Elia Mascolo</a> and <a href
 <p>The class was composed of <span class="math inline">\(24\)</span> students (<span class="math inline">\(N=24\)</span>). At generation 0, the “population” of <em>template</em> cards that had been distributed to the students was composed of the following three patterns (8 copies each):</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/Patterns_A_B_C.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
+<p><img src="images/Patterns_A_B_C.jpg" class="img-fluid figure-img"></p>
 <figcaption>Fig. 4 - The initial replicards provided to the students (generation 0) all belong to three types shown here: patterns A, B and C.</figcaption>
 </figure>
 </div>
@@ -343,7 +343,7 @@ Concept by <a href="https://eliamascolo.github.io/">Elia Mascolo</a> and <a href
 </tbody>
 </table>
 <p>We can also visualize the number of <strong>A</strong>, <strong>B</strong> and <strong>C</strong> over generations through a line plot as follows.</p>
-<div id="15e74632" class="cell" data-execution_count="1">
+<div id="78dd2974" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>plt.rcParams[<span class="st">'figure.figsize'</span>] <span class="op">=</span> [<span class="dv">5</span>, <span class="fl">2.5</span>]</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>plt.plot([<span class="dv">8</span>, <span class="dv">16</span>, <span class="dv">21</span>], label<span class="op">=</span><span class="st">'A'</span>)</span>
@@ -390,7 +390,7 @@ Concept by <a href="https://eliamascolo.github.io/">Elia Mascolo</a> and <a href
 <h5 class="anchored" data-anchor-id="mutants-at-generation-1">Mutants at generation <span class="math inline">\(1\)</span>:</h5>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/mutants_gen1.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
+<p><img src="images/mutants_gen1.jpg" class="img-fluid figure-img"></p>
 <figcaption>Fig. 5 - At generation 1, five <em>replicards</em> did not belong to any of the initial patterns (A, B or C). Those five <em>replicards</em> were termed <em>mutants</em> and are shown here. They all seem variants of pattern C. Three of them are the same and are termed C<span class="math inline">\(\alpha\)</span>. The other two are different types of mutants and are termed C<span class="math inline">\(\beta\)</span> and C<span class="math inline">\(\gamma\)</span>.</figcaption>
 </figure>
 </div>
@@ -399,7 +399,7 @@ Concept by <a href="https://eliamascolo.github.io/">Elia Mascolo</a> and <a href
 <h5 class="anchored" data-anchor-id="mutants-at-generation-2">Mutants at generation <span class="math inline">\(2\)</span>:</h5>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/mutants_gen2.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
+<p><img src="images/mutants_gen2.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
 <figcaption>Fig. 6 - The two mutants that survived to generation 2. They are both of type C<span class="math inline">\(\beta\)</span>.</figcaption>
 </figure>
 </div>
@@ -480,7 +480,7 @@ Concept by <a href="https://eliamascolo.github.io/">Elia Mascolo</a> and <a href
 <li><code>create</code> : a function that can be used to generate the initial population. It requires to specify three parameters: (1) the type of organism, i.e., whatever name that identifies that type; (2) the (expected) reproductive success of that type of organism; (3) the number of organisms of that type that must be created.</li>
 </ul>
 <p>We import the needed code from the <code>replicards</code> library, as well as the <code>random</code> library as follows</p>
-<div id="e325e5d1" class="cell" data-execution_count="2">
+<div id="a076f995" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> random</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> evo_sim_objects <span class="im">import</span> Population, create</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -489,13 +489,13 @@ Concept by <a href="https://eliamascolo.github.io/">Elia Mascolo</a> and <a href
 <h3 class="anchored" data-anchor-id="settings">Settings</h3>
 <p>We can now set the initial condition (the population at “Generation 0”) for our evolutionary simulation.</p>
 <p>First, we set how many “organisms” per type are present at the beginning. Here we simulate the in-class experiment by setting three patterns, 8 copies each, for a total population size of <span class="math inline">\(N=24\)</span>.</p>
-<div id="daaccb6e" class="cell" data-execution_count="3">
+<div id="c50a74e1" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>n_a <span class="op">=</span> <span class="dv">8</span>  <span class="co"># Initial number of A</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>n_b <span class="op">=</span> <span class="dv">8</span>  <span class="co"># Initial number of B</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>n_c <span class="op">=</span> <span class="dv">8</span>  <span class="co"># Initial number of C</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Next, we can decide how easy it will be to replicate each type of pattern, by setting the expected (average) number of copies each pattern get at each generation.</p>
-<div id="a43d4e01" class="cell" data-execution_count="4">
+<div id="63264151" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>w_a <span class="op">=</span> <span class="dv">12</span>  <span class="co"># Expected number of offspring for A per generation</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>w_b <span class="op">=</span>  <span class="dv">8</span>  <span class="co"># Expected number of offspring for B per generation</span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>w_c <span class="op">=</span>  <span class="dv">4</span>  <span class="co"># Expected number of offspring for C per generation</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -504,7 +504,7 @@ Concept by <a href="https://eliamascolo.github.io/">Elia Mascolo</a> and <a href
 <section id="run-the-evolutionary-simulation" class="level3">
 <h3 class="anchored" data-anchor-id="run-the-evolutionary-simulation">Run the evolutionary simulation</h3>
 <p>We are now ready to run a computer simulation.</p>
-<div id="4e9f249e" class="cell" data-execution_count="5">
+<div id="21d7287d" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Initialize population</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>pop <span class="op">=</span> Population(create(<span class="st">'A'</span>, w_a, n_a) <span class="op">+</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>                 create(<span class="st">'B'</span>, w_b, n_b) <span class="op">+</span></span>
@@ -578,7 +578,7 @@ Concept by <a href="https://eliamascolo.github.io/">Elia Mascolo</a> and <a href
 <p>By inspecting the patterns found in the mutants (see the <a href="#Mutants">Mutants</a> paragraph), we can infer their <em>phylogenetic tree</em>, which is a convenient way to represent how the <em>types</em> are related, analogous to family trees. In the tree below, we can see that all the mutants were descendants of pattern <strong>C</strong>. This is not too surprising because we reasoned that pattern <strong>C</strong> was the hardest to replicate and so the easiest to get wrong when trying to copy it. The mutants <strong>C<span class="math inline">\(\alpha\)</span></strong>, <strong>C<span class="math inline">\(\beta\)</span></strong> and <strong>C<span class="math inline">\(\gamma\)</span></strong> appeared at generation 1. We can also see that patterns <strong>C<span class="math inline">\(\alpha\)</span></strong> and <strong>C<span class="math inline">\(\gamma\)</span></strong> went extinct at generation 2.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/phylogenetic_tree_replicards.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
+<p><img src="images/phylogenetic_tree_replicards.jpg" class="img-fluid figure-img"></p>
 <figcaption>Fig. 7 - Phylogenetic tree of the <em>mutant</em> replicards.</figcaption>
 </figure>
 </div>
@@ -695,7 +695,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/yseulthb\.github\.io\/replicards\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -1032,8 +1032,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <p><em>Original idea: Elia Mascolo &amp; Yseult Héjja-Brichard</em></p>
 </div>
     <div class="nav-footer-right">
-      &nbsp;
-    </div>
+<p>made with ︎♥️ &amp; <a href="https://quarto.org">Quarto</a></p>
+</div>
   </div>
 </footer>
 
