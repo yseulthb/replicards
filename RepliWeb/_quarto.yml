@@ -4,6 +4,7 @@ project:
 website:
   title: "Replicards"
   favicon: logo-icon.png
+  image: "images/replicards_social_media_preview.jpg"
   google-analytics: "G-3HLZHZMB0V"
   back-to-top-navigation: true
   navbar:
