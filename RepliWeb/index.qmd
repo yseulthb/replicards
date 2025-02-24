@@ -1,5 +1,6 @@
 ---
 title: <center>*The Replicards*</center>
+image: "/images/replicards_social_media_preview.jpg"
 jupyter: python3
 ---
 <!-- Google tag (gtag.js) -->
@@ -302,11 +303,11 @@ The *replicards* were $7 \times 7$ square grids (of size 7 cm $\times$ 7 cm), pr
 
 The code was written in *Python* and is available at [https://github.com/eliamascolo/replicards](https://github.com/eliamascolo/replicards).
 
-Replicards package: [https://anaconda.org/eliamascolo/replicards](https://anaconda.org/eliamascolo/replicards)
+Replicards package: [conda](https://anaconda.org/eliamascolo/replicards) or [pip](https://pypi.org/project/replicards/)
 
 
 ---
 
 ## Acknowledgements
 
-Assa + highschool students
+We would like to thank the students of classes 3°A liceo scientifico and 1°Cl liceo classico (academic year 2024-2025) of the *Istituto Salesiano S. Ambrogio* in Milan and their science teacher Simone Assanelli for crash-testing our Replicards game. The results in this notebook were produced by these students.
