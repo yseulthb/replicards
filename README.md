@@ -19,6 +19,12 @@ Access the webpage presentation here: https://replicards.netlify.app/
 conda install eliamascolo::replicards
 ```
 
+### Using *pip*
+
+``` bash
+pip install replicards==1.0.0
+```
+
 ## User guide
 
 Import the `replicards` library:
