@@ -303,7 +303,7 @@ The *replicards* were $7 \times 7$ square grids (of size 7 cm $\times$ 7 cm), pr
 
 The code was written in *Python* and is available at [https://github.com/eliamascolo/replicards](https://github.com/eliamascolo/replicards).
 
-Replicards package: [https://anaconda.org/eliamascolo/replicards](https://anaconda.org/eliamascolo/replicards)
+Replicards package: [conda](https://anaconda.org/eliamascolo/replicards) or [pip](https://pypi.org/project/replicards/)
 
 
 ---
