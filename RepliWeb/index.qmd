@@ -194,7 +194,7 @@ We import the needed code from the `replicards` library, as well as the `random`
 
 ```{python}
 import random
-from evo_sim_objects import Population, create
+from replicards import Population, create
 ```
 
 ### Settings
