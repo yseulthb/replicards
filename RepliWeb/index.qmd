@@ -1,5 +1,6 @@
 ---
 title: <center>*The Replicards*</center>
+image: "/images/replicards_social_media_preview.jpg"
 jupyter: python3
 ---
 <!-- Google tag (gtag.js) -->
