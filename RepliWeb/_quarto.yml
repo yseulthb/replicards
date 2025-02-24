@@ -10,6 +10,9 @@ website:
     logo: logo.svg
     left:
       - href: index.qmd
+    right:
+      - icon: github
+        href: https://github.com/eliamascolo/replicards
   page-footer:
     border: true
     center: "*Original idea: Elia Mascolo & Yseult Héjja-Brichard*" 
