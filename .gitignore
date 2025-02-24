@@ -8,3 +8,7 @@ src/replicards/__pycache__/evo_sim_objects.cpython-312.pyc
 src/replicards/.DS_Store
 .DS_Store
 src/replicards/.DS_Store
+.pypirc
+/dist
+/build
+/src/replicards.egg-info

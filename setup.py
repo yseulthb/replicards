@@ -12,7 +12,7 @@ setup(
     author_email='eliamascolo94@gmail.com',
     classifiers=[
         'Programming Language :: Python :: 3',
-        'License :: OSI Approved :: GNU GENERAL PUBLIC LICENSE',
+        'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
     ],
     python_requires='>=3.6',
