@@ -310,4 +310,4 @@ Replicards package: [https://anaconda.org/eliamascolo/replicards](https://anacon
 
 ## Acknowledgements
 
-Assa + highschool students
+We would like to thank the students of classes 3°A liceo scientifico and 1°Cl liceo classico (academic year 2024-2025) of the *Istituto Salesiano S. Ambrogio* in Milan and their science teacher Simone Assanelli for crash-testing our Replicards game. The results in this notebook were produced by these students.

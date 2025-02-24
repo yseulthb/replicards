@@ -82,11 +82,11 @@ gtag('config', 'G-3HLZHZMB0V', { 'anonymize_ip': true});
 <link rel="stylesheet" href="styles.css">
 <meta property="og:title" content="Replicards">
 <meta property="og:description" content="">
-<meta property="og:image" content="https://replicards.netlify.app/images/replicards_social_media_preview.jpg">
+<meta property="og:image" content="https://replicards.netlify.app//images/replicards_social_media_preview.jpg">
 <meta property="og:site_name" content="Replicards">
 <meta name="twitter:title" content="Replicards">
 <meta name="twitter:description" content="">
-<meta name="twitter:image" content="https://replicards.netlify.app/images/replicards_social_media_preview.jpg">
+<meta name="twitter:image" content="https://replicards.netlify.app//images/replicards_social_media_preview.jpg">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -262,7 +262,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/replicards\.netlify\.app");
+      var filterRegex = new RegExp("https:\/\/replicards\.netlify\.app\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
