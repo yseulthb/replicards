@@ -8,7 +8,6 @@ source:
 build:
   noarch: python
   script: python setup.py install
-  # script: python setup_conda.py install
 
 requirements:
   host:
@@ -22,5 +21,7 @@ requirements:
     - matplotlib
 
 about:
-  license: GNU GENERAL PUBLIC LICENSE
+  home: "https://github.com/eliamascolo/replicards"
+  license: "MIT"
   summary: "An interactive way of teaching biological evolution through a card game."
+  description: "An interactive way of teaching biological evolution through a card game."
