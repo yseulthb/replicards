@@ -123,14 +123,21 @@
     "href": "index.html#materials-and-methods",
     "title": "\nThe Replicards\n",
     "section": "Materials and Methods",
-    "text": "Materials and Methods\n\nReplicards\nThe replicards were \\(7 \\times 7\\) square grids (of size 7 cm \\(\\times\\) 7 cm), printed on thick paper. The X marks on the cells were drawn by the students using pencils.\n\n\nSimulations\nThe code was written in Python and is available at https://github.com/eliamascolo/replicards.\nReplicards package: https://anaconda.org/eliamascolo/replicards"
+    "text": "Materials and Methods\n\nReplicards\nThe replicards were \\(7 \\times 7\\) square grids (of size 7 cm \\(\\times\\) 7 cm), printed on thick paper. The X marks on the cells were drawn by the students using pencils.\n\n\nSimulations\nThe code was written in Python and is available at https://github.com/eliamascolo/replicards.\nReplicards package: conda or pip"
   },
   {
     "objectID": "index.html#acknowledgements",
     "href": "index.html#acknowledgements",
     "title": "\nThe Replicards\n",
     "section": "Acknowledgements",
-    "text": "Acknowledgements\nAssa + highschool students"
+    "text": "Acknowledgements\nWe would like to thank the students of classes 3°A liceo scientifico and 1°Cl liceo classico (academic year 2024-2025) of the Istituto Salesiano S. Ambrogio in Milan and their science teacher Simone Assanelli for crash-testing our Replicards game. The results in this notebook were produced by these students."
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact Us",
+    "section": "",
+    "text": "If you have feedback, comments, or questions, feel free to contact us by filling in the form below and we’ll come back to you.\n\n\n\nYour name\n\n\n\n\n\nYour email address\n\n\n\n\n\nYour message\n\n\n\n\n\n\n\n\n\n\nSend Message\n\n\n\n\n\nContact Form by FreeContactForm.com\n\n\n\n\n\n\nThanks for contacting us, we will get back in touch with you soon.\n\n\n\n\n\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "replicards.html",

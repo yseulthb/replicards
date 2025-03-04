@@ -177,6 +177,10 @@ window.Quarto = {
     <a class="nav-link active" href="./index.html" aria-current="page"> 
 <span class="menu-text"></span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./contact.html"> 
+<span class="menu-text">Contact Us</span></a>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
@@ -264,9 +268,7 @@ window.Quarto = {
 <center>
 Concept by <a href="https://eliamascolo.github.io/">Elia Mascolo</a> and <a href="https://yseulthb.github.io/">Yseult Héjja-Brichard</a>
 </center>
-<center>
-✉️ <a href="mailto:eliamascolo94@gmail.com">eliamascolo94@gmail.com</a>
-</center>
+<!-- <center> ✉️ [eliamascolo94@gmail.com](mailto:eliamascolo94@gmail.com) </center> -->
 <p><br> <br></p>
 <p>The aim of this interactive class is to demonstrate how replicants that can inherit mutations can undergo evolution by natural selection if the inheritable characteristics can affect their reproductive success. <br> <br></p>
 <section id="protocol" class="level2">
@@ -358,7 +360,7 @@ Concept by <a href="https://eliamascolo.github.io/">Elia Mascolo</a> and <a href
 </tbody>
 </table>
 <p>We can also visualize the number of <strong>A</strong>, <strong>B</strong> and <strong>C</strong> over generations through a line plot as follows.</p>
-<div id="d4b516dd" class="cell" data-execution_count="1">
+<div id="a4282a5b" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>plt.rcParams[<span class="st">'figure.figsize'</span>] <span class="op">=</span> [<span class="dv">5</span>, <span class="fl">2.5</span>]</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>plt.plot([<span class="dv">8</span>, <span class="dv">16</span>, <span class="dv">21</span>], label<span class="op">=</span><span class="st">'A'</span>)</span>
@@ -495,7 +497,7 @@ Concept by <a href="https://eliamascolo.github.io/">Elia Mascolo</a> and <a href
 <li><code>create</code> : a function that can be used to generate the initial population. It requires to specify three parameters: (1) the type of organism, i.e., whatever name that identifies that type; (2) the (expected) reproductive success of that type of organism; (3) the number of organisms of that type that must be created.</li>
 </ul>
 <p>We import the needed code from the <code>replicards</code> library, as well as the <code>random</code> library as follows</p>
-<div id="8cd8544d" class="cell" data-execution_count="2">
+<div id="277e7ce1" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> random</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> replicards <span class="im">import</span> Population, create</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -504,13 +506,13 @@ Concept by <a href="https://eliamascolo.github.io/">Elia Mascolo</a> and <a href
 <h3 class="anchored" data-anchor-id="settings">Settings</h3>
 <p>We can now set the initial condition (the population at “Generation 0”) for our evolutionary simulation.</p>
 <p>First, we set how many “organisms” per type are present at the beginning. Here we simulate the in-class experiment by setting three patterns, 8 copies each, for a total population size of <span class="math inline">\(N=24\)</span>.</p>
-<div id="cfedba0b" class="cell" data-execution_count="3">
+<div id="06ce52dd" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>n_a <span class="op">=</span> <span class="dv">8</span>  <span class="co"># Initial number of A</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>n_b <span class="op">=</span> <span class="dv">8</span>  <span class="co"># Initial number of B</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>n_c <span class="op">=</span> <span class="dv">8</span>  <span class="co"># Initial number of C</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Next, we can decide how easy it will be to replicate each type of pattern, by setting the expected (average) number of copies each pattern get at each generation.</p>
-<div id="b6cab352" class="cell" data-execution_count="4">
+<div id="10249d88" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>w_a <span class="op">=</span> <span class="dv">12</span>  <span class="co"># Expected number of offspring for A per generation</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>w_b <span class="op">=</span>  <span class="dv">8</span>  <span class="co"># Expected number of offspring for B per generation</span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>w_c <span class="op">=</span>  <span class="dv">4</span>  <span class="co"># Expected number of offspring for C per generation</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -519,7 +521,7 @@ Concept by <a href="https://eliamascolo.github.io/">Elia Mascolo</a> and <a href
 <section id="run-the-evolutionary-simulation" class="level3">
 <h3 class="anchored" data-anchor-id="run-the-evolutionary-simulation">Run the evolutionary simulation</h3>
 <p>We are now ready to run a computer simulation.</p>
-<div id="1b5f875e" class="cell" data-execution_count="5">
+<div id="614646a8" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Initialize population</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>pop <span class="op">=</span> Population(create(<span class="st">'A'</span>, w_a, n_a) <span class="op">+</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>                 create(<span class="st">'B'</span>, w_b, n_b) <span class="op">+</span></span>
@@ -608,13 +610,13 @@ Concept by <a href="https://eliamascolo.github.io/">Elia Mascolo</a> and <a href
 <section id="simulations" class="level3">
 <h3 class="anchored" data-anchor-id="simulations">Simulations</h3>
 <p>The code was written in <em>Python</em> and is available at <a href="https://github.com/eliamascolo/replicards">https://github.com/eliamascolo/replicards</a>.</p>
-<p>Replicards package: <a href="https://anaconda.org/eliamascolo/replicards">https://anaconda.org/eliamascolo/replicards</a></p>
+<p>Replicards package: <a href="https://anaconda.org/eliamascolo/replicards">conda</a> or <a href="https://pypi.org/project/replicards/">pip</a></p>
 <hr>
 </section>
 </section>
 <section id="acknowledgements" class="level2">
 <h2 class="anchored" data-anchor-id="acknowledgements">Acknowledgements</h2>
-<p>Assa + highschool students</p>
+<p>We would like to thank the students of classes 3°A liceo scientifico and 1°Cl liceo classico (academic year 2024-2025) of the <em>Istituto Salesiano S. Ambrogio</em> in Milan and their science teacher Simone Assanelli for crash-testing our Replicards game. The results in this notebook were produced by these students.</p>
 
 
 </section>
@@ -1047,7 +1049,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <p><em>Original idea: Elia Mascolo &amp; Yseult Héjja-Brichard</em></p>
 </div>
     <div class="nav-footer-right">
-<p>made with ︎♥️ &amp; <a href="https://quarto.org">Quarto</a></p>
+<p>made with 🍕 🍹 &amp; <a href="https://quarto.org">Quarto</a></p>
 </div>
   </div>
 </footer>
