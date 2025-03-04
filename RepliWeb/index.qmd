@@ -17,7 +17,6 @@ format:
 </script>
 
 <center> Concept by [Elia Mascolo](https://eliamascolo.github.io/) and [Yseult Héjja-Brichard](https://yseulthb.github.io/) </center>
-<!-- <center> ✉️ [eliamascolo94@gmail.com](mailto:eliamascolo94@gmail.com) </center> -->
 
 <br />
 
@@ -299,6 +298,8 @@ By inspecting the patterns found in the mutants (see the [Mutants](#Mutants) par
 ### Replicards
 
 The *replicards* were $7 \times 7$ square grids (of size 7 cm $\times$ 7 cm), printed on thick paper. The **X** marks on the cells were drawn by the students using pencils.
+
+We have made a [PDF file](images/PrintablePatterns.pdf) containing blank square grids and grids with the three different patterns to be printed if needed.
 
 ### Simulations
 
