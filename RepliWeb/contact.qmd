@@ -1,0 +1,22 @@
+---
+title: "Contact Us"
+---
+
+
+<form name="contact" action="/success" method="POST" data-netlify="true">
+  <p> If you have feedback, comments, or questions, feel free to contact us by filling in the form below and we'll come back to you.</p><br>
+  <p>
+    <label>Your Name: <input type="text" name="name" /></label>
+  </p>
+  <p>
+    <label>Your Email: <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <label>Message: <textarea name="message"></textarea></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
+
+
