@@ -2,6 +2,15 @@
 title: "Contact Us"
 ---
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3HLZHZMB0V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3HLZHZMB0V');
+</script>
 
 <form name="contact" action="/success" method="POST" data-netlify="true">
   <p> If you have feedback, comments, or questions, feel free to contact us by filling in the form below and we'll come back to you.</p><br>
