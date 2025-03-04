@@ -2,6 +2,9 @@
 title: <center>*The Replicards*</center>
 image: "/images/replicards_social_media_preview.jpg"
 jupyter: python3
+format:
+  html:
+    toc: true
 ---
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3HLZHZMB0V"></script>
@@ -14,10 +17,8 @@ jupyter: python3
 </script>
 
 <center> Concept by [Elia Mascolo](https://eliamascolo.github.io/) and [Yseult Héjja-Brichard](https://yseulthb.github.io/) </center>
-<center> ✉️ [eliamascolo94@gmail.com](mailto:eliamascolo94@gmail.com) </center>
+<!-- <center> ✉️ [eliamascolo94@gmail.com](mailto:eliamascolo94@gmail.com) </center> -->
 
-
-<br />
 <br />
 
 The aim of this interactive class is to demonstrate how replicants that can inherit mutations can undergo evolution by natural selection if the inheritable characteristics can affect their reproductive success.

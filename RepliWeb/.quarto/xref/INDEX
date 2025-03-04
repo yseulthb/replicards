@@ -10,5 +10,11 @@
   },
   "src/replicards/replicards.ipynb": {
     "replicards.html": "94d50ef8"
+  },
+  "contact.qmd": {
+    "contact.html": "aa81c77e"
+  },
+  "success.qmd": {
+    "success.html": "9c6ac21b"
   }
 }

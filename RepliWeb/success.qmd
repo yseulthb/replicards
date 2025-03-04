@@ -1,0 +1,26 @@
+<style>
+.button {
+    color: #fff;
+    text-align: center;
+    background-color: #B8B8B8;
+    align-self: center;
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    transition: all .4s;
+}
+</style>
+
+<div class="padding-section-large">
+<div id="w-node-_1d7fac2d-a88d-9da3-7c4d-5855d0dff4bf-6ffb4296">
+<div class="text-align-center">
+<div class="margin-bottom margin-xxsmall">
+<h2 class="heading-style-h1">Thanks for reaching out!</h2>
+</div>
+<p>We will come back to you as soon as possible.</p></br>
+</div>
+<div class="margin-top margin-xsmall">
+<a class="button w-button" href="https://replicards.netlify.app/">Back to the website</a>
+</div>
+</div>
+</div>
