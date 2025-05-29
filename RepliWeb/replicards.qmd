@@ -32,7 +32,7 @@ jupyter: python3
 
 ## Protocol
 
-Each student was provided with a deck of square cards showing an empty $8 \times 8$ grid. This deck of cards was available to the students for the whole duration of the class.
+Each student was provided with a deck of square cards showing an empty $7 \times 7$ grid. This deck of cards was available to the students for the whole duration of the class.
 
 <div id=newfig>
     <img src="images/starter_deck.jpg" alt="Picture of a deck of blank cards showing empty grids." width="200"/>
