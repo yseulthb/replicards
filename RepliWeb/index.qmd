@@ -1,5 +1,5 @@
 ---
-title: <center>*The Replicards*</center>
+title: ""
 image: "/images/replicards_social_media_preview.jpg"
 jupyter: python3
 format:
@@ -15,6 +15,9 @@ format:
 
   gtag('config', 'G-3HLZHZMB0V');
 </script>
+
+<img alt="replicards logo" class="align-center" src="images/replicards_social_media_preview.jpg" style="width: 600px;">
+
 
 <center> Concept by [Elia Mascolo](https://eliamascolo.github.io/) and [Yseult Héjja-Brichard](https://yseulthb.github.io/) </center>
 
