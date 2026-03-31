@@ -9,6 +9,7 @@ Access the webpage presentation here: https://replicards.netlify.app/
 
 > ***The aim of this interactive class is to demonstrate how replicants that can inherit mutations can undergo evolution by natural selection if the inheritable characteristics can affect their reproductive success.***
 
+The content of the website is also available as a preprint: https://doi.org/10.32942/X2KQ1H 
 ---
 
 ## Installation
