@@ -12,7 +12,7 @@ jupyter: python3
 
 > ***The aim of this interactive class is to demonstrate how replicants that can inherit mutations can undergo evolution by natural selection if the inheritable characteristics can affect their reproductive success.***
 
-The content of this website is also available as a preprint: https://doi.org/10.32942/X2KQ1H
+Note that the content of this website is also available as a preprint: https://doi.org/10.32942/X2KQ1H
 
 <br />
 <br />
