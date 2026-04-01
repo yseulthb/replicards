@@ -2,22 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://replicards.netlify.app/src/replicards/replicards.html</loc>
-    <lastmod>2025-02-21T14:49:43.054Z</lastmod>
-  </url>
-  <url>
-    <loc>https://replicards.netlify.app/index.html</loc>
-    <lastmod>2025-03-04T14:18:21.404Z</lastmod>
-  </url>
-  <url>
-    <loc>https://replicards.netlify.app/contact.html</loc>
-    <lastmod>2025-03-04T14:18:01.267Z</lastmod>
-  </url>
-  <url>
-    <loc>https://replicards.netlify.app/replicards.html</loc>
-    <lastmod>2025-02-23T20:12:41.429Z</lastmod>
+    <lastmod>2025-05-29T12:44:28.333Z</lastmod>
   </url>
   <url>
     <loc>https://replicards.netlify.app/about.html</loc>
     <lastmod>2025-02-21T14:49:43.031Z</lastmod>
+  </url>
+  <url>
+    <loc>https://replicards.netlify.app/replicards.html</loc>
+    <lastmod>2026-04-01T15:24:05.083Z</lastmod>
+  </url>
+  <url>
+    <loc>https://replicards.netlify.app/contact.html</loc>
+    <lastmod>2025-03-04T20:56:59.323Z</lastmod>
+  </url>
+  <url>
+    <loc>https://replicards.netlify.app/index.html</loc>
+    <lastmod>2026-04-01T15:25:17.814Z</lastmod>
+  </url>
+  <url>
+    <loc>https://replicards.netlify.app/success.html</loc>
+    <lastmod>2025-03-04T14:57:34.970Z</lastmod>
   </url>
 </urlset>
