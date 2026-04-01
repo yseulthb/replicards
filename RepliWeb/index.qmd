@@ -18,6 +18,7 @@ format:
 
 <img alt="replicards logo" class="align-center" src="images/replicards_social_media_preview.jpg" style="width: 600px;">
 
+
 <center> Concept by [Elia Mascolo](https://eliamascolo.github.io/) and [Yseult Héjja-Brichard](https://yseulthb.github.io/) </center>
 
 <br />
@@ -29,7 +30,7 @@ The aim of this interactive class is to demonstrate how replicants that can inhe
 
 ## Protocol
 
-Each student was provided with a deck of square cards showing an empty $8 \times 8$ grid. This deck of cards was available to the students for the whole duration of the class.
+Each student was provided with a deck of square cards showing an empty $7 \times 7$ grid. This deck of cards was available to the students for the whole duration of the class.
 
 ![Fig. 1 - Deck of blank cards showing empty grids. Each student had a deck like this as raw material for making copies of their template card.](images/starter_deck.jpg){width=50%}
 
