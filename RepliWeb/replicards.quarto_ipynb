@@ -110,7 +110,7 @@
         "\n",
         "We can also visualize the number of **A**, **B** and **C** over generations through a line plot as follows."
       ],
-      "id": "9f09e743"
+      "id": "2cde66c0"
     },
     {
       "cell_type": "code",
@@ -130,7 +130,7 @@
         "plt.legend()\n",
         "plt.show()"
       ],
-      "id": "f5d86aed",
+      "id": "e6b094ea",
       "execution_count": null,
       "outputs": []
     },
@@ -236,7 +236,7 @@
         "\n",
         "We import the needed code from the `replicards` library, as well as the `random` library as follows"
       ],
-      "id": "d97121e6"
+      "id": "1c304040"
     },
     {
       "cell_type": "code",
@@ -245,7 +245,7 @@
         "from evo_sim_objects import Population, create\n",
         "import random"
       ],
-      "id": "91b48dce",
+      "id": "12cd1d9a",
       "execution_count": null,
       "outputs": []
     },
@@ -259,7 +259,7 @@
         "\n",
         "First, we set how many \"organisms\" per type are present at the beginning. Here we simulate the in-class experiment by setting three patterns, 8 copies each, for a total population size of $N=24$."
       ],
-      "id": "30f2ce6b"
+      "id": "6c3ceb29"
     },
     {
       "cell_type": "code",
@@ -269,7 +269,7 @@
         "n_b = 8  # Initial number of B\n",
         "n_c = 8  # Initial number of C"
       ],
-      "id": "412592bf",
+      "id": "bf6d6336",
       "execution_count": null,
       "outputs": []
     },
@@ -279,7 +279,7 @@
       "source": [
         "Next, we can decide how easy it will be to replicate each type of pattern, by setting the expected (average) number of copies each pattern get at each generation."
       ],
-      "id": "97ae7153"
+      "id": "d40d0816"
     },
     {
       "cell_type": "code",
@@ -289,7 +289,7 @@
         "w_b =  8  # Expected number of offspring for B per generation\n",
         "w_c =  4  # Expected number of offspring for C per generation"
       ],
-      "id": "272701ea",
+      "id": "c856c2c3",
       "execution_count": null,
       "outputs": []
     },
@@ -301,7 +301,7 @@
         "\n",
         "We are now ready to run a computer simulation."
       ],
-      "id": "e5fa1c6d"
+      "id": "208d50ae"
     },
     {
       "cell_type": "code",
@@ -334,7 +334,7 @@
         "# Plot results of the evolutionary simulation\n",
         "pop.plot_evolution()"
       ],
-      "id": "12d03849",
+      "id": "df7d9e7b",
       "execution_count": null,
       "outputs": []
     },
@@ -400,15 +400,14 @@
         "\n",
         "## Acknowledgements\n"
       ],
-      "id": "51534743"
+      "id": "fb13ae92"
     }
   ],
   "metadata": {
     "kernelspec": {
-      "name": "python3",
+      "display_name": "Python 3",
       "language": "python",
-      "display_name": "Python 3 (ipykernel)",
-      "path": "/Users/yseulthb/.pyenv/versions/3.8.6/share/jupyter/kernels/python3"
+      "name": "python3"
     }
   },
   "nbformat": 4,
